@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jialin.wang/"/>
-  <updated>2016-03-22T03:13:21.000Z</updated>
+  <updated>2016-03-22T09:47:21.000Z</updated>
   <id>http://jialin.wang/</id>
   
   <author>
@@ -16,26 +16,457 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://jialin.wang/2016/03/22/hello-world/"/>
-    <id>http://jialin.wang/2016/03/22/hello-world/</id>
-    <published>2016-03-22T03:13:21.000Z</published>
-    <updated>2016-03-22T03:13:21.000Z</updated>
+    <title>CoreMIDI小记</title>
+    <link href="http://jialin.wang/2016/03/11/CoreMIDI/"/>
+    <id>http://jialin.wang/2016/03/11/CoreMIDI/</id>
+    <published>2016-03-11T01:43:00.000Z</published>
+    <updated>2016-03-22T09:47:21.000Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。&lt;/p&gt;
+&lt;p&gt;由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。&lt;/p&gt;
+&lt;p&gt;话说，在iOS MIDI界一定要提的就是&lt;a href=&quot;http://www.rockhoppertech.com/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gene De Lisa&lt;/a&gt;大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的，虽然总是没什么用，但是多少会给我一点启发。&lt;/p&gt;
+&lt;h4 id=&quot;最简单的MIDI包发送实现&quot;&gt;&lt;a href=&quot;#最简单的MIDI包发送实现&quot; class=&quot;headerlink&quot; title=&quot;最简单的MIDI包发送实现&quot;&gt;&lt;/a&gt;最简单的MIDI包发送实现&lt;/h4&gt;&lt;p&gt;感觉对于初学者来讲，上苹果官网花半天看了一遍document，看完之后感觉比看之前还糊涂。其实先看看成品代码也没什么不好的&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;MIDIClientRef client;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MIDIPortRef outputPort;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MIDIClientCreate(CFSTR(&amp;quot;clientID&amp;quot;), nil, nil, &amp;amp;client);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MIDIOutputPortCreate(client, CFSTR(&amp;quot;PortID&amp;quot;), &amp;amp;outputPort);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Byte packetListBuffer[777][256];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MIDIPacketList* pktList = (MIDIPacketList*)packetListBuffer[0];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Byte data[]  = &amp;#123;p1, p2, p3&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MIDIPacket *pkt = MIDIPacketListInit(pktList);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;pkt = MIDIPacketListAdd(pktListFirstRight, 256, pkt, 0, 3, data);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ItemCount destinationCount = MIDIGetNumberOfDestinations();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;for (int i = 0; i &amp;lt; destinationCount; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   MIDISend(outputPort, MIDIGetDestination(i), pktList);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;是不是So Easy? 执行完这段代码，你就可以给你的MIDI设备发一个指令了。代码中p1,p2,p3是MIDI包中的数据，规则详见&lt;a href=&quot;https://www.midi.org/specifications/item/table-1-summary-of-midi-message&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MIDI标准&lt;/a&gt;.&lt;br&gt;当然接收MIDI消息，也可以用类似的机制。另外，在发送的接收消息的时候，推荐使用多线程，因为在发送，接收的同时，你可能还会要求iOS系统播放，或者显示这些消息，一旦时间花销很大，可能会影响整个音乐的节奏。&lt;/p&gt;
+&lt;h4 id=&quot;简单解释一下上面的代码吧&quot;&gt;&lt;a href=&quot;#简单解释一下上面的代码吧&quot; class=&quot;headerlink&quot; title=&quot;简单解释一下上面的代码吧~&quot;&gt;&lt;/a&gt;简单解释一下上面的代码吧~&lt;/h4&gt;&lt;p&gt;声明并初始化client和port,这个是发送指令之前必须要干的，在发送之前要明确给谁发，从哪里发。实际上，这段代码千篇一律，基本在所有使用CoreMIDI的代码中都需要。&lt;/p&gt;
+&lt;p&gt;之后，读过developer文档的同学应该都知道，MIDI指令的data要藏在MIDIPacket里面,MIDIPacket要藏在MIDIPacketList里面，装的方法就是用MIDIPacketListAdd方法。一个MIDIPacketList里面可以有多个MIDIpacket，这样就可以做到向外面发送多个连续的包。在MIDIPacketListAdd方法中，值得一提的是第三个参数，表示packet的生效时间，在上面的例子中传的是0，表示NOW（即时生效），也可以增加其他的MIDI时间量。&lt;/p&gt;
+&lt;p&gt;最后MIDISend在for循环中，向所有MIDI设备都发一遍MIDIPacketList,此时，在你的MIDI设备上便会有响应了。当然，如果你能确定在众多的MIDI Destination中哪一个是你真正的target，也可以直接进行send.&lt;/p&gt;
+&lt;p&gt;At last, CoreMIDI库中当然不仅仅有上述这几个方法，但是上面提到的可以说是一定会被用到。有关其他关于MIDI有趣的Point，我会以后再补充。&lt;/p&gt;
+&lt;p&gt;另外，关于MIDISendSysEx()的Info也非常有意思，因为不常用，在这里不赘述了。&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;http://www.rockhoppertech.com/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gene De Lisa&lt;/a&gt;‘s Post and all his great effort and passion on both music and programming.&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。&lt;/p&gt;
+&lt;p&gt;由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。&lt;/p&gt;
+&lt;p&gt;话说
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>.cat 域名小计</title>
+    <link href="http://jialin.wang/2016/02/27/cat_Lang/"/>
+    <id>http://jialin.wang/2016/02/27/cat_Lang/</id>
+    <published>2016-02-27T09:30:00.000Z</published>
+    <updated>2016-03-22T09:22:27.000Z</updated>
+    
+    <content type="html">&lt;p&gt;这个博客写了两年了吧，看了看还真没啥有用的东西，还是坚持写下去吧，至少给自己留一点记忆。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xlk6d.com1.z0.glb.clouddn.com/logo-fundacio-footer.png?attname=&amp;amp;e=1456577286&amp;amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:fic2sKnDeY3ZmFIhBX2fGcfzQ4I&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;前天弄了个shuttle.cat的域名，刚开始买了半天没买到，人家说支付宝到账要check3天，我太着急了，cancel了好几遍订单。最后被划走了3次钱，现在都没找回来呢。最后还是光光帮忙把他买下来了。&lt;/p&gt;
+&lt;p&gt;然后这个域名和以往的域名不一样，他有两条特殊规定：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You must develop activities (in any language) that promote the Catalan language and culture&lt;/li&gt;
+&lt;li&gt;You will publish a website on the internet, within 6 months following Your .CAT domain name registration, which must be fully or partly in Catalan language.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;比较硬性的规定就是要用加&lt;strong&gt;泰罗尼亚语&lt;/strong&gt;弄个网页。然后呢，简单wiki之后就可以发现，这个加泰罗尼亚语大概就是巴萨罗那那块说的话，大概和西班牙语差不多吧。&lt;/p&gt;
+&lt;p&gt;因此，我又马上向我的墨西哥小伙伴问了问，他告诉了我这些：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Well I don’t know Catalan, but is like a mixture of Spanish with France and Portuguese&lt;/li&gt;
+&lt;li&gt;A bit explanation is that the real name of the Spanish is “castellano” is another region from Spain but since when they conquer America the king of Spain was from that region they used to speak it and then became the Spanish language and Catalan is from “Cataluña” other region.&lt;/li&gt;
+&lt;li&gt;Even today if you go to there they will speak in Catalan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;综上。这个cat语还是和西语不一样的，所以翻译的时候还是按照cat语翻吧~ 然后就是一段故事，大概就是说cat语和西语同样历史悠久，而且沿袭至今。&lt;br&gt;大概就这样啦。所以买.cat域名的小伙伴们还是准备好翻译再买吧。续费也真心不便宜。但是&lt;strong&gt;.cat&lt;/strong&gt;还是很靓的呢！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xlk6d.com1.z0.glb.clouddn.com/notici100_1.jpg?attname=&amp;amp;e=1456577251&amp;amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:1tI1axgXLMWA1lchxL6RgK01r2Q&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个博客写了两年了吧，看了看还真没啥有用的东西，还是坚持写下去吧，至少给自己留一点记忆。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xlk6d.com1.z0.glb.clouddn.com/logo-fundacio-footer.png?attname=&amp;amp
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iOS 读书笔记 - 1</title>
+    <link href="http://jialin.wang/2016/02/05/ios_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0_1/"/>
+    <id>http://jialin.wang/2016/02/05/ios_读书笔记_1/</id>
+    <published>2016-02-05T04:43:00.000Z</published>
+    <updated>2016-03-22T09:51:07.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h3&gt;&lt;h5 id=&quot;The-object-that-received-the-message-is-called-target&quot;&gt;&lt;a href=&quot;#The-object-that-received-the-message-is-called-target&quot; class=&quot;headerlink&quot; title=&quot;The object that received the message is called target&quot;&gt;&lt;/a&gt;&lt;strong&gt;The object that received the message is called target&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;接收消息的一方叫做target&lt;/p&gt;
+&lt;h5 id=&quot;The-message-sent-is-called-the-action&quot;&gt;&lt;a href=&quot;#The-message-sent-is-called-the-action&quot; class=&quot;headerlink&quot; title=&quot;The message sent is called the action&quot;&gt;&lt;/a&gt;&lt;strong&gt;The message sent is called the action&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;发出的消息叫做action&lt;/p&gt;
+&lt;p&gt;这章主要是手把手教着做了个app，没啥干货&lt;/p&gt;
+&lt;h3 id=&quot;第二章&quot;&gt;&lt;a href=&quot;#第二章&quot; class=&quot;headerlink&quot; title=&quot;第二章&quot;&gt;&lt;/a&gt;第二章&lt;/h3&gt;&lt;hr&gt;
+&lt;h5 id=&quot;Cocoa-Touch-Frameworks-are-collections-of-objective-C-class&quot;&gt;&lt;a href=&quot;#Cocoa-Touch-Frameworks-are-collections-of-objective-C-class&quot; class=&quot;headerlink&quot; title=&quot;Cocoa Touch Frameworks are collections of objective-C class&quot;&gt;&lt;/a&gt;&lt;strong&gt;Cocoa Touch Frameworks are collections of objective-C class&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;Cocoa Touch框架是oc的一组类&lt;/p&gt;
+&lt;h5 id=&quot;In-Objective-C-we-typically-put-an-underscore-at-the-begining-of-the-instance-varible-name&quot;&gt;&lt;a href=&quot;#In-Objective-C-we-typically-put-an-underscore-at-the-begining-of-the-instance-varible-name&quot; class=&quot;headerlink&quot; title=&quot;In Objective-C,we typically put an underscore at the begining of the instance varible name.&quot;&gt;&lt;/a&gt;&lt;strong&gt;In Objective-C,we typically put an underscore at the begining of the instance varible name.&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;在oc中，一般在实例变量前面加一个下划线&lt;/p&gt;
+&lt;h5 id=&quot;The-important-difference-between-C-structure-and-an-Objective-C-class-is-that-a-class-has-methods&quot;&gt;&lt;a href=&quot;#The-important-difference-between-C-structure-and-an-Objective-C-class-is-that-a-class-has-methods&quot; class=&quot;headerlink&quot; title=&quot;The important difference between C structure and an Objective-C class is that a class has methods&quot;&gt;&lt;/a&gt;&lt;strong&gt;The important difference between C structure and an Objective-C class is that a class has methods&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;c的结构和oc的类的主要不同点在于oc的类有方法&lt;/p&gt;
+&lt;h5 id=&quot;AClass-Instance-AClass-alloc-init&quot;&gt;&lt;a href=&quot;#AClass-Instance-AClass-alloc-init&quot; class=&quot;headerlink&quot; title=&quot;AClass Instance = [[AClass alloc] init];&quot;&gt;&lt;/a&gt;AClass Instance = [[AClass alloc] init];&lt;/h5&gt;&lt;p&gt;分配内存并初始化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;receiver&lt;/strong&gt;: a pointer to the object being asked to excute a method&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;receiver&lt;/strong&gt;:一个指向将要执行该方法的对象的指针&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;selector&lt;/strong&gt;: the name of method to be excuted&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;selector&lt;/strong&gt;: 方法的名字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;argument&lt;/strong&gt;: the values to be supplied as the parameters to the methods&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;argument&lt;/strong&gt;: 方法的参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;Ainstance-nil&quot;&gt;&lt;a href=&quot;#Ainstance-nil&quot; class=&quot;headerlink&quot; title=&quot;Ainstance = nil;&quot;&gt;&lt;/a&gt;&lt;code&gt;Ainstance = nil;&lt;/code&gt;&lt;/h5&gt;&lt;p&gt;最简单的释放内存的方法&lt;/p&gt;
+&lt;h5 id=&quot;a-message-sent-to-nil-is-ignored&quot;&gt;&lt;a href=&quot;#a-message-sent-to-nil-is-ignored&quot; class=&quot;headerlink&quot; title=&quot;a message sent to nil is ignored&quot;&gt;&lt;/a&gt;&lt;strong&gt;a message sent to nil is ignored&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;一个向空指针发送的消息会被忽略&lt;/p&gt;
+&lt;h5 id=&quot;NSObject有三个方法-alloc、init和description&quot;&gt;&lt;a href=&quot;#NSObject有三个方法-alloc、init和description&quot; class=&quot;headerlink&quot; title=&quot;NSObject有三个方法 alloc、init和description&quot;&gt;&lt;/a&gt;&lt;strong&gt;NSObject有三个方法 alloc、init和description&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;这三个方法可以被子类重写&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;for (NSString *item in items)&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&quot;You-can-nit-use-it-if-you-need-to-add-or-remove-objects-within-the-loop&quot;&gt;&lt;a href=&quot;#You-can-nit-use-it-if-you-need-to-add-or-remove-objects-within-the-loop&quot; class=&quot;headerlink&quot; title=&quot;You can nit use it if you need to add or remove objects within the loop.&quot;&gt;&lt;/a&gt;&lt;strong&gt;You can nit use it if you need to add or remove objects within the loop.&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;快枚举不能用于增删对象&lt;/p&gt;
+&lt;h5 id=&quot;Objective-C-only-allows-single-inheritance-so-every-class-can-only-has-one-super-class&quot;&gt;&lt;a href=&quot;#Objective-C-only-allows-single-inheritance-so-every-class-can-only-has-one-super-class&quot; class=&quot;headerlink&quot; title=&quot;Objective-C only allows single inheritance, so every class can only has one super class&quot;&gt;&lt;/a&gt;&lt;strong&gt;Objective-C only allows single inheritance, so every class can only has one super class&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;oc只允许单继承，因此每个类只允许有一个父类&lt;/p&gt;
+&lt;h5 id=&quot;Each-initializer-begin-with-the-word-init&quot;&gt;&lt;a href=&quot;#Each-initializer-begin-with-the-word-init&quot; class=&quot;headerlink&quot; title=&quot;Each initializer begin with the word init&quot;&gt;&lt;/a&gt;&lt;strong&gt;Each initializer begin with the word &lt;em&gt;init&lt;/em&gt;&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;构造函数必须以init开头&lt;/p&gt;
+&lt;h5 id=&quot;designated-initializer-must-initialize-all-the-varibles&quot;&gt;&lt;a href=&quot;#designated-initializer-must-initialize-all-the-varibles&quot; class=&quot;headerlink&quot; title=&quot;designated initializer must initialize all the varibles&quot;&gt;&lt;/a&gt;&lt;strong&gt;designated initializer must initialize all the varibles&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;designated initializer必须初始化全部变量&lt;/p&gt;
+&lt;h5 id=&quot;instancetype-can-only-be-used-in-return-type&quot;&gt;&lt;a href=&quot;#instancetype-can-only-be-used-in-return-type&quot; class=&quot;headerlink&quot; title=&quot;instancetype can only be used in return type&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;instancetype&lt;/em&gt; can only be used in return type&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;instancetype只能用于返回类型&lt;/p&gt;
+&lt;h5 id=&quot;But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types&quot;&gt;&lt;a href=&quot;#But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types&quot; class=&quot;headerlink&quot; title=&quot;But in objective-C, you can not have two methods with the same selector and different return types&quot;&gt;&lt;/a&gt;&lt;strong&gt;But in objective-C, you can not have two methods with the same selector and different return types&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;在oc，你不能有同名且参数或返回类型不同的方法&lt;/p&gt;
+&lt;h5 id=&quot;id-is-defined-as-a-pointer-to-any-object&quot;&gt;&lt;a href=&quot;#id-is-defined-as-a-pointer-to-any-object&quot; class=&quot;headerlink&quot; title=&quot;id is defined as a pointer to any object&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;id&lt;/em&gt; is defined as a pointer to any object&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;id是一个指向任何对象的指针&lt;/p&gt;
+&lt;h5 id=&quot;isa-pointer-is-a-pointer-to-its-class&quot;&gt;&lt;a href=&quot;#isa-pointer-is-a-pointer-to-its-class&quot; class=&quot;headerlink&quot; title=&quot;isa pointer is a pointer to its class&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;isa&lt;/em&gt; pointer is a pointer to its class&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;isa指针是指向一个对象的类的指针，他描述了obj is a class&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h3&gt;&lt;h5 id=&quot;The-object-that-received-the-message-is-called-target&quot;&gt;&lt;a hre
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iOS 读书笔记 - 0</title>
+    <link href="http://jialin.wang/2016/02/05/ios_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://jialin.wang/2016/02/05/ios_读书笔记/</id>
+    <published>2016-02-05T04:21:00.000Z</published>
+    <updated>2016-03-22T09:23:04.000Z</updated>
+    
+    <content type="html">&lt;p&gt;刚刚放假一周，自己肯定不能闲着，这学期的考试大获全胜，假期得继续做点有意义的事，所以呢，想系统的学学iOS，因此，经过一系列筛选，最后选择了&lt;strong&gt;iOS Programming THE BIG NERD RANCH GUIDE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;自以为接触的语言较多，现在读完了前两章，感觉由浅入深，介绍的很不错，尤其介绍了oc和其他语言的不同之处，很符合我的口味。写这个东西主要是给自己一个总结的机会，可能对于第三者（3rd Party,不要想太多）帮助不很大。大概内容就是抄抄书，增加一遍印象而已。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;刚刚放假一周，自己肯定不能闲着，这学期的考试大获全胜，假期得继续做点有意义的事，所以呢，想系统的学学iOS，因此，经过一系列筛选，最后选择了&lt;strong&gt;iOS Programming THE BIG NERD RANCH GUIDE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;自以
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2015的Google</title>
+    <link href="http://jialin.wang/2015/12/23/%E5%8F%82%E8%A7%82GoogleCamp/"/>
+    <id>http://jialin.wang/2015/12/23/参观GoogleCamp/</id>
+    <published>2015-12-22T16:09:00.000Z</published>
+    <updated>2016-03-22T09:21:31.000Z</updated>
+    
+    <content type="html">&lt;p&gt;加入GC一年了吧&lt;br&gt;现在成了社长，今天带着大家去参观了Google北京&lt;br&gt;Google里面条件真是好，只有看了才知道&lt;br&gt;也算是完成了今年的一大活动啦吧&lt;/p&gt;
+&lt;p&gt;Kathy介绍了好多，小伙伴们也各有感悟，&lt;br&gt;总之还是说好的比较多&lt;br&gt;毕竟工资条件还有员工待遇都是一流的&lt;br&gt;一切都是高大上的样子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/nLlcDzL.jpg&quot; alt=&quot;Imgur&quot;&gt;&lt;/p&gt;
+&lt;p&gt;从葡萄牙回来就混进了ITTC&lt;br&gt;给郭老师干活，学了不少东西，也涨了不少见识&lt;br&gt;最近开始要准备电磁场补考了&lt;br&gt;不知能不能把两边的事平衡好&lt;/p&gt;
+&lt;p&gt;而且有幸进了UTA的Program&lt;br&gt;以后去美帝从机场到学校只需要10多公里&lt;br&gt;简直爽爽哒&lt;br&gt;哈哈，事情基本搞定了就不得不多想想以后的日子了&lt;/p&gt;
+&lt;p&gt;真希望以后到美帝之后可以去Google实习两天&lt;br&gt;镀镀金，长长见识&lt;br&gt;在去旧金山参加一下Google I/O或者WWDC&lt;br&gt;那真是此生无憾了。。。&lt;/p&gt;
+&lt;p&gt;现在，怀揣着些许忐忑和梦想&lt;br&gt;搞着实验室里的东西，应付着挂科&lt;br&gt;捎带着慢慢干毕设&lt;br&gt;慢慢积攒人脉&lt;br&gt;一点一点来吧&lt;/p&gt;
+&lt;p&gt;我一直在感叹上帝一直眷顾我&lt;br&gt;自己真的应该在努力一点&lt;br&gt;再真诚一点&lt;br&gt;再善良一点&lt;br&gt;珍惜自己拥有的一切&lt;br&gt;付出更多自己可以付出的东西&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;加入GC一年了吧&lt;br&gt;现在成了社长，今天带着大家去参观了Google北京&lt;br&gt;Google里面条件真是好，只有看了才知道&lt;br&gt;也算是完成了今年的一大活动啦吧&lt;/p&gt;
+&lt;p&gt;Kathy介绍了好多，小伙伴们也各有感悟，&lt;br&gt;总之还是说好的比较多&lt;br&gt;毕竟工资条件还有员
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Setup Mac/iOS VPN configuation using XML &amp; PHP</title>
+    <link href="http://jialin.wang/2015/09/02/mibileconfig/"/>
+    <id>http://jialin.wang/2015/09/02/mibileconfig/</id>
+    <published>2015-09-02T06:32:00.000Z</published>
+    <updated>2016-03-22T09:24:30.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Q: How to set up VPN in a quick way?&lt;br&gt;A: Use a config file.&lt;/p&gt;
+&lt;p&gt;In Mac/iOS, there’s a build in config file developed by Apple - &lt;em&gt;*.mobileconfig&lt;/em&gt;, here is the description on &lt;a href=&quot;fileinfo.com&quot;&gt;fileinfo&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Configuration file created for iPhone and iPod touch devices; contains device setup information, such as password policies, access permissions, and proxy connection information, as well as VPN, email, and calendar settings; commonly used for deploying and registering Apple device configurations within enterprise networks.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This kind of configuation file is commonly used in fast config of muti-devices. In addition, if you are providing some service you can also use this kind of file.&lt;/p&gt;
+&lt;p&gt;Generally speaking, building such a file need an Apple developed software called &lt;a href=&quot;https://itunes.apple.com/cn/app/apple-configurator/id434433123?mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Apple Configurator&lt;/a&gt;, and you can enter your information into this software and than export a “.mobileconfig” file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://a4.mzstatic.com/us/r30/Purple3/v4/70/60/e3/7060e3cb-d14d-4e2e-8603-7d24fa47eb33/screen800x500.jpeg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;This is a good way, however, this is not a intellgent way. Because for most users, setting up VPN config is a little bit complex and time consuming. What they really need is a UI that only need you to enter their account name and their password. That would be perfect.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://sfiles.qianduanmei.com/usr/uploads/2012/09/27/free-login-signin-signup-psd-043.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;So you should do something behind this beautiful interface. You should know the structure of the .mobileconfig file, and figure out where to save the username ans where to save the password.So I figured it out. It is actually a XML file using DTD provided by apple. In this XML file, your configuration is saved.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;lt;?xml version=\”1.0\” encoding=\”UTF-8\”?&amp;gt;&lt;br&gt;&amp;lt;!DOCTYPE plist PUBLIC \”-//Apple//DTD PLIST 1.0//EN\” \”&lt;a href=&quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd\&amp;quot;&amp;gt;&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.apple.com/DTDs/PropertyList-1.0.dtd\&amp;quot;&amp;gt;&lt;/a&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With all these information supported, it’s not hard for us to build a php file which receive the HTTP POST request from the front end and generate such a XML file on your server. This XML file contains the unique user info and your server info. If you want to change your server, just correct the XML and let users login to re-download the mobileconfig file. &lt;/p&gt;
+&lt;p&gt;The last but not the least, you still need to sign your mobileconig file to make it safe and relible. To sign your config file, use this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;openssl smime -sign -signer path/to/crt -inkey path/to/key -certfile path/to/ca-bundle -nodetach -outform der -in name.mobileconfig -out profile_signed.mobileconfig&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Everything will be alright then.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Q: How to set up VPN in a quick way?&lt;br&gt;A: Use a config file.&lt;/p&gt;
+&lt;p&gt;In Mac/iOS, there’s a build in config file developed by Apple - &lt;em&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Learning Baysian Network</title>
+    <link href="http://jialin.wang/2015/05/18/Learning%20Baysian%20network/"/>
+    <id>http://jialin.wang/2015/05/18/Learning Baysian network/</id>
+    <published>2015-05-18T00:17:00.000Z</published>
+    <updated>2016-03-22T09:45:26.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Outline&quot;&gt;&lt;a href=&quot;#Outline&quot; class=&quot;headerlink&quot; title=&quot;Outline&quot;&gt;&lt;/a&gt;Outline&lt;/h2&gt;&lt;p&gt;In this project, a BN and a DBN is learned from the given data using Greedy Hill Climbing and random restarts. A directed graph without any edge is seen as the initial graph, then an algorithm called GHC is used and with this method, a better structure is found step by step supported by the scoring function, until a situation that every neighbor of the current status have lower score then the current, then random restart is executed. In this way, the best structure will be get. After that, parameter of this structure can be calculate so that inference can be done to predict the value.&lt;/p&gt;
+&lt;h2 id=&quot;Basic-Steps&quot;&gt;&lt;a href=&quot;#Basic-Steps&quot; class=&quot;headerlink&quot; title=&quot;Basic Steps&quot;&gt;&lt;/a&gt;Basic Steps&lt;/h2&gt;&lt;h3 id=&quot;BN-StructureLearning&quot;&gt;&lt;a href=&quot;#BN-StructureLearning&quot; class=&quot;headerlink&quot; title=&quot;BN StructureLearning&quot;&gt;&lt;/a&gt;BN StructureLearning&lt;/h3&gt;&lt;p&gt;At the very beginning, structure learning is necessary to find out the best-scored structure in BN.&lt;br&gt;With the initial network which has N vertex generated by the data class, in every step in GHC, program will find out the better scored structure in its neighbor, that structure will be seem as current structure. In this way, the current structure will be better and better until the program find a structure that all its neighbor have lower score, that means, a local best is found. To deal with this situation, random restart will be executed, a random graph generator will be called and a new random graph will be returned as the current structure, then GHC is applied again. After several times of random restart, a global best is found.&lt;br&gt;In the progress above, a TABU list is also applied when checking the neighbor of the current structure, if the neighbor is in the TABU list, ignore it and check the next one, else, calculate its score and add it into TABU list.&lt;/p&gt;
+&lt;h3 id=&quot;DBN-StructureLearning&quot;&gt;&lt;a href=&quot;#DBN-StructureLearning&quot; class=&quot;headerlink&quot; title=&quot;DBN StructureLearning&quot;&gt;&lt;/a&gt;DBN StructureLearning&lt;/h3&gt;&lt;p&gt;Analogously, structure learning in DBN also use GHC algorithm, random restart and TABU lists. The difference is that structure learning in GHC has 2N vertex(Which is double number of BN), but has no edge from time t to time t or for time t+1 to time t. When learning DBN structures, if a vertex has 3 parent vertex, which is the max number of a vertex, there will not any additional edge points to it.&lt;/p&gt;
+&lt;h3 id=&quot;ParameterLearning&quot;&gt;&lt;a href=&quot;#ParameterLearning&quot; class=&quot;headerlink&quot; title=&quot;ParameterLearning&quot;&gt;&lt;/a&gt;ParameterLearning&lt;/h3&gt;&lt;p&gt;In this step, probabilities should be determined given the optimal structure with certain standard.In the constructor, the test data is given for the program to learn the best structure,&lt;br&gt;parameterLearning(dyllscore d1,data data1);&lt;br&gt;Knowing all the parameters , is given by the following expression:&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;http://imgur.com/aWnMixA&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/aWnMixA.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;Note that: N’ are pseudo-counts, which equals 0.5 in this project.&lt;br&gt;The above formula can be described by the following program:&lt;br&gt;&lt;br&gt;    for(int i=0; i&lt;2*p_numberofnode; i++){=&quot;&quot; for(int=&quot;&quot; j=&quot;0;&quot; j&lt;p_dyqll[i];=&quot;&quot; j++){=&quot;&quot; for(=&quot;&quot; int=&quot;&quot; k=&quot;0;&quot; k&lt;p_dyrll[i];=&quot;&quot; k++){=&quot;&quot; theta[i][j][k]=&quot;(d1.getCount(i,&quot; j,=&quot;&quot; k)+constn)=&quot;&quot; (d1.getcounts(i,=&quot;&quot; j)+p_dyrll[i]*constn);=&quot;&quot; }=&quot;&quot; ###=&quot;&quot; inference=&quot;&quot; -------=&quot;&quot; after=&quot;&quot; leaned=&quot;&quot; the=&quot;&quot; parameters,=&quot;&quot; db=&quot;&quot; network=&quot;&quot; can=&quot;&quot; be=&quot;&quot; used=&quot;&quot; to=&quot;&quot; infer=&quot;&quot; most=&quot;&quot; probably=&quot;&quot; future=&quot;&quot; data.=&quot;&quot; as=&quot;&quot; known=&quot;&quot; in=&quot;&quot; section=&quot;&quot; above,=&quot;&quot; θijk,=&quot;&quot; which=&quot;&quot; is=&quot;&quot; probability=&quot;&quot; that=&quot;&quot; ith=&quot;&quot; variable=&quot;&quot; has=&quot;&quot; kth=&quot;&quot; value=&quot;&quot; with=&quot;&quot; jth=&quot;&quot; parent=&quot;&quot; config=&quot;&quot; calculated.=&quot;&quot; this=&quot;&quot; set=&quot;&quot; of=&quot;&quot; for=&quot;&quot; calculate=&quot;&quot; possible=&quot;&quot; values=&quot;&quot; appear=&quot;&quot; future.=&quot;&quot; when=&quot;&quot; predicting=&quot;&quot; variable,=&quot;&quot; all=&quot;&quot; other=&quot;&quot; should=&quot;&quot; also=&quot;&quot; specific=&quot;&quot; so=&quot;&quot; a=&quot;&quot; θijk=&quot;&quot; get=&quot;&quot; from=&quot;&quot; above.=&quot;&quot; sum=&quot;&quot; appearance=&quot;&quot; value.=&quot;&quot; compared=&quot;&quot; take,=&quot;&quot; one=&quot;&quot; biggest=&quot;&quot; variable.=&quot;&quot; ##=&quot;&quot; scoring=&quot;&quot; functions##=&quot;&quot; --------=&quot;&quot; functions=&quot;&quot; are=&quot;&quot; necessary=&quot;&quot; scores=&quot;&quot; structures,=&quot;&quot; base=&quot;&quot; class=&quot;&quot; provided=&quot;&quot; save=&quot;&quot; algorithms=&quot;&quot; find=&quot;&quot; optimal=&quot;&quot; solution=&quot;&quot; score=&quot;&quot; structure.in=&quot;&quot; project,=&quot;&quot; two=&quot;&quot; kinds=&quot;&quot; algorithms(log-likelihood=&quot;&quot; and=&quot;&quot; minimum=&quot;&quot; description=&quot;&quot; length)=&quot;&quot; ordered,=&quot;&quot; each=&quot;&quot; implements=&quot;&quot; both=&quot;&quot; bayesian=&quot;&quot; dynamic=&quot;&quot; network.=&quot;&quot; abstract=&quot;&quot; class,=&quot;&quot; declarations=&quot;&quot; done=&quot;&quot; class.=&quot;&quot; llscore###=&quot;&quot; ---------------------------=&quot;&quot; first,=&quot;&quot; initialize=&quot;&quot; count[][][]=&quot;&quot; counts[][]=&quot;&quot; given=&quot;&quot; train=&quot;&quot; data=&quot;&quot; dag.=&quot;&quot; then=&quot;&quot; determine=&quot;&quot; nodes=&quot;&quot; nodes,=&quot;&quot; list&lt;string=&quot;&quot;&gt; ls= digraph1.getPais(data1.getVl().get(n));&lt;br&gt;Transfer the array of parent nodes in string to integer for convenience. Iterate the rll, determine the number of parents configurations&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;arrayOfParents[aop]=parent;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;qll[n]*=rll[parent];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;br&gt;After that given the number of nodes, the number of parent configurations of each nodes, number of different values of each nodes, iterate the whole data file,&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;data1.getCore().size();i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;data1.getCore().get(i).size();j+=numberOfNode)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;br&gt;each set of values is corresponding to a certain count[][][],&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;firstParameter=n;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;secondParameter+=coef*weight;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;thirdParameter=Integer.parseInt(data1.getCore().get(i).get(n+j));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;count[firstParameter][secondParameter][thirdParameter]++;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;br&gt;Then, it is easy to get the value of counts[][] given the count[][][],&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;numberOfNode;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;j&amp;lt;qll[i];j++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; k=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;k&amp;lt;rll[i];k++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			counts[i][j]+=count[i][j][k];	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;br&gt;Finally, apply log-likelihood algorithm with all the given parameters to get the final result in the Bayesian network.&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/aWnMixA&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/aWnMixA.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;
+
+
+&lt;p&gt;Note that:  is count[i][j][k] and  is counts[i][j].&lt;/p&gt;
+&lt;h3 id=&quot;MDLscore&quot;&gt;&lt;a href=&quot;#MDLscore&quot; class=&quot;headerlink&quot; title=&quot;MDLscore&quot;&gt;&lt;/a&gt;MDLscore&lt;/h3&gt;&lt;p&gt;Minimum description length is another scoring criterion in this project, all the initialization is done in the constructor.&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mdlscore(data data1, Digraph&amp;lt;String&amp;gt; digraph1,&lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; llscore, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[] qll)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;the score of the structure by using minimum description length algorithm can be achieved through the expression below:&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dymdlscore = dyllscore - &lt;span class=&quot;number&quot;&gt;0.5&lt;/span&gt;*Math.log(totalNumber)*B/Math.log(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Note that: is the total number of instances, and  denotes the network complexity, which is given by:&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;i&amp;lt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*numberOfNode;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	B=B+(dyrll[i]-&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;)*dyqll[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;DyLLscore&quot;&gt;&lt;a href=&quot;#DyLLscore&quot; class=&quot;headerlink&quot; title=&quot;DyLLscore&quot;&gt;&lt;/a&gt;DyLLscore&lt;/h3&gt;&lt;p&gt;In the terms of the log-likelihood score in the dynamic Bayesian network, the calculation is basically the same as it is in the Bayesian network. The difference only lies on the number of nodes, which needs to take careful consideration. Because it depends on two states, the number of nodes in each sets we should be two times of the actual number of nodes.&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dyrll = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*numberOfNode];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;dyqll=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*numberOfNode];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;DyMDLscore&quot;&gt;&lt;a href=&quot;#DyMDLscore&quot; class=&quot;headerlink&quot; title=&quot;DyMDLscore&quot;&gt;&lt;/a&gt;DyMDLscore&lt;/h3&gt;&lt;p&gt;In the terms of the minimum description length score in the dynamic Bayesian network comparing to it in the Bayesian network, the only difference also lies on the number of nodes in each set.&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dyrmim = new int[2*numberOfNode];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;for(int i = 0 ; i&amp;lt;2*numberOfNode ; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	dyrll[i]=rll[i%numberOfNode];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	totalNumber=totalNumber + dyrll[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Efficiency&quot;&gt;&lt;a href=&quot;#Efficiency&quot; class=&quot;headerlink&quot; title=&quot;Efficiency&quot;&gt;&lt;/a&gt;Efficiency&lt;/h2&gt;&lt;h3 id=&quot;Array-ArrayList-and-LinkedList&quot;&gt;&lt;a href=&quot;#Array-ArrayList-and-LinkedList&quot; class=&quot;headerlink&quot; title=&quot;Array, ArrayList and LinkedList&quot;&gt;&lt;/a&gt;Array, ArrayList and LinkedList&lt;/h3&gt;&lt;p&gt;The time complexity comparison is as follows:&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;http://imgur.com/gEp0H46&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/gEp0H46.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;add() in the table refers to add(E e), and remove() refers to remove(int index)&lt;br&gt;ArrayList has O(n) time complexity for arbitrary indices of add/remove, but O(1) for the operation at the end of the list.&lt;br&gt;LinkedList has O(n) time complexity for arbitrary indices of add/remove, but O(1) for operations at end/beginning of the List.&lt;br&gt;The difference of their performance is obvious.&lt;br&gt;&lt;a href=&quot;http://imgur.com/o9Pb51K&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/o9Pb51K.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;br&gt;LinkedList is faster in add and remove, but slower in get. Based on the complexity table and testing results, we can figure out when to use ArrayList or LinkedList. In brief, LinkedList should be preferred if:&lt;br&gt;there are no large number of random access of element&lt;br&gt;there are a large number of add/remove operations&lt;br&gt;In our project, the data class need only add data once(The data never changes), but is read several times, so ArrayList is a good choice for data. For other small data structures, LinkedList is seem in high efficiency, and sometimes for the small length-fixed structures, array is used.&lt;br&gt;&lt;br&gt;### Directed Graph(Adjacency matrix or adjacency list)&lt;br&gt;Adjacency matrix or adjacency list? When facing this problem, it is important to make a decision for that to continue our project. It can not only have impact on the efficiency of the program but also can influence the stability. Multiple factor is considered in our project, as listed below.&lt;br&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/GirLr1J&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/GirLr1J.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;
+
+
+
+
+&lt;p&gt;As can be seen in the chart above. An adjacency matrix occupy much more space in the memory, and adjacency list just save what it need. However, adjacency matrix have a higher speed to find a specific edge, but it is slower to iterate though the graph.&lt;br&gt;In our project, it is rare to have a graph with more than 20 vertex, so it will not occupy lots of memory. What’s more, we always need to look up parents of a specific vertex, which need to Iterate though the graph, so a data structure using adjacency list is generated.&lt;/p&gt;
+&lt;center&gt;&lt;a href=&quot;http://imgur.com/iDO0Lgj&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/iDO0Lgj.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;
+
+
+
+&lt;h3 id=&quot;Data-Structure-in-Parameter-Learning&quot;&gt;&lt;a href=&quot;#Data-Structure-in-Parameter-Learning&quot; class=&quot;headerlink&quot; title=&quot;Data Structure in Parameter Learning&quot;&gt;&lt;/a&gt;Data Structure in Parameter Learning&lt;/h3&gt;&lt;p&gt;As we known, the score is typically based on the count[ ][ ][ ] and the counts[ ][ ] in this project. However, iterating the whole data is time-consuming. So we need to estimate the number of different values in each of the dimensions when they are initialized.&lt;br&gt;Although the number of count[ ][ ][ ] and counts[ ][ ] is fixed given the structure, it is impossible to determine how many parent configurations or even which nodes are the parents of a certain node. So in order not to receive exceptions in the project. We initial the count[ ][ ][ ] and count[ ][ ] with maximum value for secure purpose. Also it turns out to save the memories comparing to the condition if we initialize them with a relatively large number.&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;theta =&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*p_numberOfNode][p_rll[max]*p_rll[max]*p_rll[max]][p_rll[max]];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;count = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*numberOfNode][rll[max]*rll[max]*rll[max]][rll[max]];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		counts = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;*numberOfNode][rll[max]*rll[max]*rll[max]];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;count = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[numberOfNode][rll[max]*rll[max]*rll[max]][rll[max]];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		counts = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt;[numberOfNode][rll[max]*rll[max]*rll[max]];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Polymorphic&quot;&gt;&lt;a href=&quot;#Polymorphic&quot; class=&quot;headerlink&quot; title=&quot;Polymorphic&quot;&gt;&lt;/a&gt;Polymorphic&lt;/h2&gt;&lt;h3 id=&quot;Polymorphic-in-scoring-function&quot;&gt;&lt;a href=&quot;#Polymorphic-in-scoring-function&quot; class=&quot;headerlink&quot; title=&quot;Polymorphic in scoring function&quot;&gt;&lt;/a&gt;Polymorphic in scoring function&lt;/h3&gt;&lt;p&gt;The scoring function is where we implement the polymorphism to redefine the method resultOfScore based on different kinds of scoring criterion. Concerning that there are various kinds of algorithm to score and select the best structure independently. We provide the base class scoringfunction where all the attributes are declared in this class.&lt;br&gt;Also, we made the scoringfunction class an abstract class with an abstract method resultOfScore, so you can’t not initialize an object of scoringfunction type, instead the specific type is recommended at the beginning.&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;abstract&lt;/span&gt; class scoringfunction  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;resultOfScore&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Polymorphic-in-Structure-Learning&quot;&gt;&lt;a href=&quot;#Polymorphic-in-Structure-Learning&quot; class=&quot;headerlink&quot; title=&quot;Polymorphic in Structure Learning&quot;&gt;&lt;/a&gt;Polymorphic in Structure Learning&lt;/h3&gt;&lt;p&gt;The structure learning functions also use polymorphic to make it possible to extend other possible solutions in a gentle way. in our project, structure learning function is like the graph below.&lt;br&gt;As can be seen in the graph, the Learn class is abstract and it has 2 abstract function to be override and 1 function that is declared and defined. In the DLearn and SLearn classes, the function learnStructures() and dagGen() are overrided because they behave different when learning BN and DBN.&lt;br&gt;&lt;a href=&quot;http://imgur.com/dXcRwvl&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/dXcRwvl.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;A-little-bit-more-work&quot;&gt;&lt;a href=&quot;#A-little-bit-more-work&quot; class=&quot;headerlink&quot; title=&quot;A little bit more work&quot;&gt;&lt;/a&gt;A little bit more work&lt;/h2&gt;&lt;p&gt;After finished programming the project, we run our program several times with the sets of data given. The result sometimes appears to be concentrated on only one number, after trying to debug our program, we found that sometimes the possibility of a variable taking different values are same, and after the “find-max” iterate, the first-max value remains.&lt;br&gt;To fix that problem, we generate a random list. When the situation above is occurred, a random value with highest score is chosen.  &lt;/p&gt;
+&lt;h2 id=&quot;Outcomes-amp-conclusion&quot;&gt;&lt;a href=&quot;#Outcomes-amp-conclusion&quot; class=&quot;headerlink&quot; title=&quot;Outcomes &amp;amp; conclusion&quot;&gt;&lt;/a&gt;Outcomes &amp;amp; conclusion&lt;/h2&gt;&lt;p&gt;Though our program is not tested on the workstation in the Lab. We can ensure that our program can run smoothly on a windows or a Mac with 2 different scoring functions and 2 sets of data. Here is the outcome of our test data on a Macbook.&lt;/p&gt;
+&lt;h2 id=&quot;Group-Member&quot;&gt;&lt;a href=&quot;#Group-Member&quot; class=&quot;headerlink&quot; title=&quot;Group Member&quot;&gt;&lt;/a&gt;Group Member&lt;/h2&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/PcmSpJn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/PcmSpJn.png&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;
+
+
+&lt;h2 id=&quot;Agradecimentos&quot;&gt;&lt;a href=&quot;#Agradecimentos&quot; class=&quot;headerlink&quot; title=&quot;Agradecimentos&quot;&gt;&lt;/a&gt;Agradecimentos&lt;/h2&gt;&lt;p&gt;Thank to Prof. Alexandra Carvalho supporting our project, especially for the doubt session in English, we really appreciate that!&lt;/p&gt;
+&lt;/2*p_numberofnode;&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Outline&quot;&gt;&lt;a href=&quot;#Outline&quot; class=&quot;headerlink&quot; title=&quot;Outline&quot;&gt;&lt;/a&gt;Outline&lt;/h2&gt;&lt;p&gt;In this project, a BN and a DBN is learned from th
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>回来之后</title>
+    <link href="http://jialin.wang/2015/05/12/%E5%9B%9E%E6%9D%A5%E4%B9%8B%E5%90%8E/"/>
+    <id>http://jialin.wang/2015/05/12/回来之后/</id>
+    <published>2015-05-12T11:03:00.000Z</published>
+    <updated>2016-03-22T09:21:36.000Z</updated>
+    
+    <content type="html">&lt;p&gt;听着久石让的音乐&lt;br&gt;不知道心里是怎么想的&lt;br&gt;只是想找个人好好聊聊&lt;br&gt;沉淀一下这两天发生的事&lt;/p&gt;
+&lt;p&gt;认真有什么用，不认真又有什么用&lt;br&gt;信教有什么用，不信教又会怎样&lt;br&gt;民主真正是什么，不民主到底差距在哪&lt;/p&gt;
+&lt;p&gt;有的人对你好，但是他们不重要&lt;br&gt;有的人对你不好，但是偏偏在乎&lt;/p&gt;
+&lt;p&gt;听着久石让的歌&lt;br&gt;好像是一点点雨水填满了山里的沟渠&lt;br&gt;把心里的烦乱一点点解决掉了。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;coutry road&lt;br&gt;take me home&lt;br&gt;to the place&lt;br&gt;I belone&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;是不是又多了一个伤心之地呢?&lt;/p&gt;
+&lt;p&gt;May 12th, 2015&lt;br&gt;B122a&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;听着久石让的音乐&lt;br&gt;不知道心里是怎么想的&lt;br&gt;只是想找个人好好聊聊&lt;br&gt;沉淀一下这两天发生的事&lt;/p&gt;
+&lt;p&gt;认真有什么用，不认真又有什么用&lt;br&gt;信教有什么用，不信教又会怎样&lt;br&gt;民主真正是什么，不民主到底差距在哪&lt;/p&gt;
+&lt;p&gt;有的人对你好，但是他们不重要&lt;b
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>波尔图和科英布拉</title>
+    <link href="http://jialin.wang/2015/05/12/%E6%B3%A2%E5%B0%94%E5%9B%BE%E5%92%8C%E7%A7%91%E8%8B%B1%E5%B8%83%E6%8B%89/"/>
+    <id>http://jialin.wang/2015/05/12/波尔图和科英布拉/</id>
+    <published>2015-05-12T04:13:00.000Z</published>
+    <updated>2016-03-22T09:21:41.000Z</updated>
+    
+    <content type="html">&lt;p&gt;上个周末&lt;br&gt;大概是一场说走就走的旅行&lt;br&gt;波尔图和科英布拉&lt;br&gt;2个人，3个人，3个人，2个人，4天&lt;/p&gt;
+&lt;p&gt;让我感受了与上帝最近的距离&lt;br&gt;又感受了离中国最远的距离&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This coner stone&lt;br&gt;this soild groud&lt;br&gt;What hights of love&lt;br&gt;When fear are still&lt;br&gt;When Striving cease&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;波尔图有葡国最好的酒&lt;br&gt;这两天喝的酒要是几年之后再喝的话，我的眼泪可能会掉出来&lt;br&gt;Sandeman酒庄确实是一个有情怀的地方&lt;/p&gt;
+&lt;p&gt;波尔图有在联大学习的东北小哥&lt;br&gt;我的内心是怎么想的，我自己都不知道&lt;br&gt;多少有些别扭。。。但是依然很舒服&lt;br&gt;我知道很矛盾，但是这就是我当时内心的感受&lt;/p&gt;
+&lt;p&gt;你做不到不以物喜不以己悲&lt;br&gt;做不到真正的自己&lt;br&gt;就永远不会不受社会干扰&lt;br&gt;话说，人生活不就是为了适应社会吗&lt;br&gt;不被干扰要如何适应呢？&lt;br&gt;话说，你这次又被谁干扰了呢？&lt;br&gt;哈哈哈&lt;/p&gt;
+&lt;p&gt;我发现自己也会从一开始就对某些人感兴趣&lt;br&gt;同时也会对一些人没兴趣&lt;br&gt;你不知道他们是谁的时候就对他们有了第一印象&lt;br&gt;这不好&lt;br&gt;要改。&lt;/p&gt;
+&lt;p&gt;波尔图有高高的教堂塔&lt;br&gt;爬上去腿都抖&lt;br&gt;波尔图不是一个适合恐高的人居住的地方&lt;br&gt;虽然我恐高，但是是被吓的&lt;br&gt;这是经过多年之后的我的总结&lt;/p&gt;
+&lt;p&gt;科英布拉有葡国最好的party和最热情的请我们喝咖啡人&lt;br&gt;在哪里最有名的咖啡馆门口坐上2个小时&lt;br&gt;和旁边的葡国人聊聊天&lt;br&gt;He is from China, and I am from Taiwan&lt;br&gt;怪怪的感觉，但是莫名的觉得好舒服&lt;/p&gt;
+&lt;p&gt;不过不管你说什么，葡萄牙大叔总会暖暖的朝你笑&lt;br&gt;这时候你会忍不住朝他傻傻的笑&lt;br&gt;有的时候彼此听不懂说什么&lt;br&gt;但是感觉我们的心里都有着人与人之间最重要的坦诚&lt;br&gt;他最后帮我们结了帐&lt;br&gt;可能，这辈子再也不会见到他了&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There in ground&lt;br&gt;His body lays&lt;br&gt;Light of the world by darkness slain&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;科英布拉有最热情的葡国人，开车带我hack了好几圈。。。&lt;br&gt;I trust them, but I never meet them&lt;br&gt;哈哈哈。。。你在里斯本宿舍的房间号是什么?&lt;br&gt;完成了2个任务&lt;br&gt;解释了好多问题&lt;br&gt;2个小时，依然看到了无比的热情，虽然没有升级或者得到牌子&lt;br&gt;但是可能是我玩这个游戏之后我最开心的一次&lt;/p&gt;
+&lt;p&gt;最后party，往回走的时候说了好多&lt;br&gt;我也意识到了好多&lt;br&gt;每个人的敏感程度不一样&lt;br&gt;我可以理解我自己&lt;br&gt;但是依然不能原谅我自己&lt;br&gt;好久好久没有被这样问住&lt;br&gt;有的时候“No guilt in life”也是相对的&lt;br&gt;没想到这次直接上了道德的刑场&lt;/p&gt;
+&lt;p&gt;虽然喝了不少&lt;br&gt;然后玩的很high&lt;br&gt;生活从来都是这样的出人意料的精彩&lt;br&gt;又是这样的回味无穷&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Till he returned&lt;br&gt;or calls me home&lt;br&gt;Here in the love of Christ I stand&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;有时候虔诚的祈祷总是好的&lt;br&gt;基督教确实再把人往好的方向引导&lt;br&gt;就是不知道玩政治的人是如何看待这件事的&lt;br&gt;上帝是啥？不管信不信教都要好好思考&lt;br&gt;至少这次之后，我没有必要怀疑上帝了&lt;br&gt;因为我们追求的东西可能是相近的&lt;br&gt;他和我不再陌生&lt;br&gt;感觉他就在我身边&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No guilt in life&lt;br&gt;No fear in death&lt;br&gt;This is the power of Christ in me&lt;br&gt;From life’s first cry&lt;br&gt;To final breathe&lt;br&gt;Jueis command my destiny&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;但愿我心不变&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bring me to the god&lt;br&gt;May 12th, 2015 on the train&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上个周末&lt;br&gt;大概是一场说走就走的旅行&lt;br&gt;波尔图和科英布拉&lt;br&gt;2个人，3个人，3个人，2个人，4天&lt;/p&gt;
+&lt;p&gt;让我感受了与上帝最近的距离&lt;br&gt;又感受了离中国最远的距离&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This coner stone&lt;br&gt;this 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Feeling in my heart</title>
+    <link href="http://jialin.wang/2015/05/06/Feeling%20in%20my%20heart.md/"/>
+    <id>http://jialin.wang/2015/05/06/Feeling in my heart.md/</id>
+    <published>2015-05-06T13:51:00.000Z</published>
+    <updated>2016-03-22T09:52:58.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun within heart&lt;/p&gt;
+&lt;p&gt;Staring at the Mac’s screen&lt;br&gt;Talking about the future and sin&lt;br&gt;Lie down on bed toss and turn&lt;br&gt;having fun outof mind&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public static void main(String[] args) throws IAException {
+        String[] s = new String[8];
+        s[1]=&amp;quot;jialin&amp;quot;;s[3]=&amp;quot;pengcong&amp;quot;;s[5]=&amp;quot;Iping&amp;quot;;
+        IterableArray&amp;lt;String&amp;gt; a = new IterableArray&amp;lt;String&amp;gt;(s);
+        System.out.println(a);
+        a.add(&amp;quot;Jianjian&amp;quot;);
+        myIterator&amp;lt;String&amp;gt; its = new myIterator&amp;lt;String&amp;gt;(a);
+        while(its.hasNext()){
+            String pp = its.next();
+            System.out.println(pp);
+            its.remove();
+        }
+        a.add(&amp;quot;miao&amp;quot;);
+        System.out.println(a);
+    }
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TR5 kinematics</title>
+    <link href="http://jialin.wang/2015/04/23/TR5%20kinematics/"/>
+    <id>http://jialin.wang/2015/04/23/TR5 kinematics/</id>
+    <published>2015-04-23T15:35:00.000Z</published>
+    <updated>2016-03-22T09:58:57.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;1-The-direct-kinematics&quot;&gt;&lt;a href=&quot;#1-The-direct-kinematics&quot; class=&quot;headerlink&quot; title=&quot;1. The direct kinematics&quot;&gt;&lt;/a&gt;1. The direct kinematics&lt;/h3&gt;&lt;h4 id=&quot;1-1-Outline&quot;&gt;&lt;a href=&quot;#1-1-Outline&quot; class=&quot;headerlink&quot; title=&quot;1.1  Outline&quot;&gt;&lt;/a&gt;1.1  Outline&lt;/h4&gt;&lt;p&gt;A direct kinematics is an approach from which we can get the final position and orientation of any part of ROB3/TR5 robot. With the given 5 angles and the graph of the robot, rotation matrix is composed to describe the movements of the robot. Finally, the position described in base frame and orientation of every part of robot can be figured out.&lt;/p&gt;
+&lt;h4 id=&quot;1-2-Establishment-of-the-coordinate-system&quot;&gt;&lt;a href=&quot;#1-2-Establishment-of-the-coordinate-system&quot; class=&quot;headerlink&quot; title=&quot;1.2 Establishment of the coordinate system&quot;&gt;&lt;/a&gt;1.2 Establishment of the coordinate system&lt;/h4&gt;&lt;p&gt;To describe the position and the orientation of all the part of the robot, serials of coordinate system should be established as described in figure below. As can be seen in the picture, the base frame is established at the bottom of the robot.&lt;br&gt;        And then, the other coordinate systems can also be established to describe the other part of the robot.&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/p3tAdHx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/p3tAdHx.jpg&quot; title=&quot;source: imgur.com&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-3-Composition-of-rotation-matrices&quot;&gt;&lt;a href=&quot;#1-3-Composition-of-rotation-matrices&quot; class=&quot;headerlink&quot; title=&quot;1.3 Composition of rotation matrices&quot;&gt;&lt;/a&gt;1.3 Composition of rotation matrices&lt;/h4&gt;&lt;p&gt;Rotation matrices is needed to be composed to describing the body orientation with respect to the coordinate system. Due to the rotation of any arm is around a fixed axis of the corresponding coordinate system, the rotation matrices can be compose in the following way.&lt;br&gt;        The rotation from X0-Y0-Z0 to X1-Y1-Z1 is around Z0(Z1) axis:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/GGz7io1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/GGz7io1.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;        The rotation from X1-Y1-Z1 to X2-Y2-Z2 is around X2 axis:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/wDPFTcu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/wDPFTcu.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;        The rotation from X2-Y2-Z2 to X3-Y3-Z3 is around X3 axis:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/H3WKQTS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/H3WKQTS.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;        The rotation from X3-Y3-Z3 to X4-Y4-Z4 is around X4 axis:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/p8042BD&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/p8042BD.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;        The rotation from X4-Y4-Z4 to X5-Y5-Z5 is around Y5 axis:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/SmDDRNa&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/SmDDRNa.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-4-Homogeneous-transformations&quot;&gt;&lt;a href=&quot;#1-4-Homogeneous-transformations&quot; class=&quot;headerlink&quot; title=&quot;1.4 Homogeneous transformations&quot;&gt;&lt;/a&gt;1.4 Homogeneous transformations&lt;/h4&gt;&lt;p&gt;In order to achieve a compact representation of the relationship between the coordinates of the same point in two or more different frames, homogeneous transformations is needed to achieve the goal to present the position and orientation in the base frame.&lt;br&gt;    Firstly, the orientation matrix can be easily generated in the way below:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/o22ARoh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/o22ARoh.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;250&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;    Then the position of the target point can be transformed by the following equation:&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;a href=&quot;http://imgur.com/2ROjXGZ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://i.imgur.com/2ROjXGZ.jpg&quot; title=&quot;source: imgur.com&quot; width=&quot;200&quot;&gt;&lt;/a&gt;&lt;/center&gt;&lt;br&gt;    As known the coordinate of each joint in the corresponding frame. The joint’s coordinate can  be easily calculated by iterative using the equation above until n=1. So the position of each joint and the end-effector is available.&lt;/p&gt;
+&lt;h4 id=&quot;1-5-Euler-angles&quot;&gt;&lt;a href=&quot;#1-5-Euler-angles&quot; class=&quot;headerlink&quot; title=&quot;1.5 Euler angles&quot;&gt;&lt;/a&gt;1.5 Euler angles&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Inverse Kinematics&lt;br&gt;2.1 Outline&lt;br&gt; Inverse Kinematics allows us to compute the rotation angle of each joint along its certain axis under the circumstances of receiving two parameters, the position and orientation matrix of the end-effector as the input.&lt;br&gt; In this approach, we divide the solution into three parts, the first section is to determine the P2 and θ3 based on the given condition. The second part is to figure out the P2, θ0, θ1 and θ2 by using the plane geometric method, and the last one is to implement the geometric method to locate the 4th point.&lt;br&gt; Since the P0 and P1 won’t change its position because of the fixed structure, the function will finally return all the corresponding solutions in the angles space.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2.1 The first part:&lt;br&gt;By given the position of P3 point and the final orientation, we can get the position of the point P2 and the θ3 in this scenario.&lt;br&gt;    It is rather evident that the direction of the A34 is identical with the vector of the y-axis in the final orientation. Knowing that, we extract the elements in the second column of the orientation, and then normalize the vector to 1. Along with the given position of the P3 point, the P2 point can be figured out by apply the following relationship:&lt;/p&gt;
+&lt;p&gt;In terms of the solution to θ3, firstly, we should find out two vectors, the first one with the direction along the A23 and the other one is with the direction along the A34, by implementing the geometric method, we can determine θ3 with the given relationship below:&lt;/p&gt;
+&lt;p&gt;2.2 The second part:&lt;br&gt;Given the condition of the position of P3, applying plane geometric method shown in the slides of lecture6, and through simple calculation, we can get P2, θ0, θ1 and θ2 in this part.&lt;br&gt;    The figure above gives all what we want to know, we pack all the functions in the auxiliaryFunction2.&lt;br&gt;    Firstly, we can determine the θ2 by:&lt;/p&gt;
+&lt;p&gt;Then we introduce two assistant angles which call β and φ, with the calculation below, we can get the value of them by:&lt;/p&gt;
+&lt;p&gt;After that, θ1 is easy to reach simply by:&lt;/p&gt;
+&lt;p&gt;Since P0 can only rotate along its z axis, so θ0 can be determined by x and y coordinates of the projection of P3 in the XOY plane through the calculation:&lt;/p&gt;
+&lt;p&gt;Finally, with all the parameters we have, P2 can be easily located.&lt;/p&gt;
+&lt;h3 id=&quot;3-A-set-of-test&quot;&gt;&lt;a href=&quot;#3-A-set-of-test&quot; class=&quot;headerlink&quot; title=&quot;3 A set of test&quot;&gt;&lt;/a&gt;3 A set of test&lt;/h3&gt;&lt;h4 id=&quot;3-1-Test-with-random-number&quot;&gt;&lt;a href=&quot;#3-1-Test-with-random-number&quot; class=&quot;headerlink&quot; title=&quot;3.1 Test with random number&quot;&gt;&lt;/a&gt;3.1 Test with random number&lt;/h4&gt;&lt;figure class=&quot;highlight matlab&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt; [P,A]=directKinematics()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-80&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;80&lt;/span&gt;):&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;160&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-80&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-40&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;):&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-40&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x2 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;):&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x3 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;):&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around y1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;):&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;*&lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Orientation in Euler Angles ZYZ:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z1-axis is &lt;span class=&quot;number&quot;&gt;9.82&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around y1-axis is &lt;span class=&quot;number&quot;&gt;127.31&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z2-axis is &lt;span class=&quot;number&quot;&gt;73.95&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The coordinates of the &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;-effector in the base frame and the Matrix of the Orientation is:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;P =&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;number&quot;&gt;221.5737&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;number&quot;&gt;156.4079&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;number&quot;&gt;560.7309&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;A =&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;number&quot;&gt;-0.3291&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.5268&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.7837&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;number&quot;&gt;0.9183&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.3718&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.1357&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;number&quot;&gt;-0.2199&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.7644&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;-0.6061&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt; inverseKinematics(P,A)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Corresponding solutions in the angles space:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Firstly, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis z1, Theta0 = &lt;span class=&quot;number&quot;&gt;-54.78&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Then, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x1, Theta1 = &lt;span class=&quot;number&quot;&gt;57.06&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Next, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x2, Theta2 = &lt;span class=&quot;number&quot;&gt;-4.28&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;After that, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x3, Theta3 = &lt;span class=&quot;number&quot;&gt;-2.92&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Finally, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis y1, Theta4 = &lt;span class=&quot;number&quot;&gt;160.06&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;3-2-Test-with-specific-number&quot;&gt;&lt;a href=&quot;#3-2-Test-with-specific-number&quot; class=&quot;headerlink&quot; title=&quot;3.2 Test with specific number&quot;&gt;&lt;/a&gt;3.2 Test with specific number&lt;/h4&gt;&lt;figure class=&quot;highlight matlab&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt; [P,A]=directKinematics()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-80&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;80&lt;/span&gt;):&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-40&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;60&lt;/span&gt;):&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x2 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;):&lt;span class=&quot;number&quot;&gt;-20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around x3 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;-100&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;):&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Please input the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around y1 axis&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;that should be in range of (&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;200&lt;/span&gt;):&lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Orientation in Euler Angles ZYZ:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z1-axis is &lt;span class=&quot;number&quot;&gt;-23.22&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around y1-axis is &lt;span class=&quot;number&quot;&gt;27.99&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; around z2-axis is &lt;span class=&quot;number&quot;&gt;46.78&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;The coordinates of the &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;-effector in the base frame and the Matrix of the Orientation is:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;P =&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;number&quot;&gt;-150.5226&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;number&quot;&gt;413.5574&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;number&quot;&gt;302.8666&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;A =&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;number&quot;&gt;0.8430&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;-0.3214&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.4313&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;number&quot;&gt;0.4313&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.8830&lt;/span&gt;   &lt;span class=&quot;number&quot;&gt;-0.1850&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;number&quot;&gt;-0.3214&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.3420&lt;/span&gt;    &lt;span class=&quot;number&quot;&gt;0.8830&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;gt;&amp;gt; inverseKinematics(P,A)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Corresponding solutions in the angles space:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Firstly, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis z1, Theta0 = &lt;span class=&quot;number&quot;&gt;20.00&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Then, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x1, Theta1 = &lt;span class=&quot;number&quot;&gt;20.00&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Next, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x2, Theta2 = &lt;span class=&quot;number&quot;&gt;-20.00&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;After that, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis x3, Theta3 = &lt;span class=&quot;number&quot;&gt;20.00&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Finally, the rotation &lt;span class=&quot;built_in&quot;&gt;angle&lt;/span&gt; along the axis y1, Theta4 = &lt;span class=&quot;number&quot;&gt;20.00&lt;/span&gt;°&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;4-Code-documentation&quot;&gt;&lt;a href=&quot;#4-Code-documentation&quot; class=&quot;headerlink&quot; title=&quot;4. Code documentation&quot;&gt;&lt;/a&gt;4. Code documentation&lt;/h3&gt;&lt;p&gt;   The Matlab™ code is made up by 5 parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;directKinematics.m&lt;/li&gt;
+&lt;li&gt;inverseKinematics.m&lt;/li&gt;
+&lt;li&gt;auxiliaryFunction1.m&lt;/li&gt;
+&lt;li&gt;auxiliaryFunction2.m&lt;/li&gt;
+&lt;li&gt;draw.m&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You should always just execute the 【directKinematics.m】 function and the 【inverseKinematics.m】 function, other 3 functions will be automatically called when you execute the two main function.&lt;/p&gt;
+&lt;h4 id=&quot;4-1-directKinematics-m&quot;&gt;&lt;a href=&quot;#4-1-directKinematics-m&quot; class=&quot;headerlink&quot; title=&quot;4.1 directKinematics.m&quot;&gt;&lt;/a&gt;4.1 directKinematics.m&lt;/h4&gt;&lt;p&gt;function [P, A] = directKinematics()&lt;br&gt;    &lt;strong&gt;Parameters&lt;/strong&gt;: none.&lt;br&gt;&lt;strong&gt;Return Values:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1. P: The position of the end-effector point;
+    2. A: The Orientation of the last arm.
+**Input Values:**
+    1. Theta0: the rotation angle along the axis z1;
+    2. Theta1: the rotation angle along the axis x1;
+    3. Theta2: the rotation angle along the axis x2;
+    4. Theta3: the rotation angle along the axis x3;
+    5. Theta4: the rotation angle along the axis y1.
+**Output Values:**
+    1. Orientation in Euler Angles ZYZ;
+    2. A painting that shows the shape of the robot.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4-2-inverseKinematics-m&quot;&gt;&lt;a href=&quot;#4-2-inverseKinematics-m&quot; class=&quot;headerlink&quot; title=&quot;4.2 inverseKinematics.m&quot;&gt;&lt;/a&gt;4.2 inverseKinematics.m&lt;/h4&gt;&lt;p&gt;function [] = inverseKinematics( P,A )&lt;br&gt;    &lt;strong&gt;Parameters: &lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1. P: The position of the end-effector point;
+    2. A: The Orientation of the last arm.
+**Return Values: **none.
+**Input Values:** none.
+**Output Values:**
+    1. Five angles corresponding the position and orientation of the robot
+    2. A painting that shows the shape of the robot.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4-3-auxiliaryFunction1-m&quot;&gt;&lt;a href=&quot;#4-3-auxiliaryFunction1-m&quot; class=&quot;headerlink&quot; title=&quot;4.3 auxiliaryFunction1.m&quot;&gt;&lt;/a&gt;4.3 auxiliaryFunction1.m&lt;/h4&gt;&lt;p&gt;function [P,A] = auxiliaryFunction1(Theta0,Theta1,Theta2,Theta3,Theta4)&lt;br&gt;    &lt;strong&gt;Parameters: &lt;/strong&gt;&lt;br&gt;        1 Theta0: the rotation angle along the axis z1;&lt;br&gt;        2 Theta1: the rotation angle along the axis x1;&lt;br&gt;        3 Theta2: the rotation angle along the axis x2;&lt;br&gt;        4 Theta3: the rotation angle along the axis x3;&lt;br&gt;        5 Theta4: the rotation angle along the axis y1.&lt;br&gt;    &lt;strong&gt;Return Values:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1. P: The position of the end-effector point;
+    2. A: The Orientation of the last arm.
+**Input Values: **none
+Output Values: none
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4-4-auxiliaryFunction2-m&quot;&gt;&lt;a href=&quot;#4-4-auxiliaryFunction2-m&quot; class=&quot;headerlink&quot; title=&quot;4.4 auxiliaryFunction2.m&quot;&gt;&lt;/a&gt;4.4 auxiliaryFunction2.m&lt;/h4&gt;&lt;p&gt;function [n1,n2,n3] = auxiliaryFunction2( x,y,z )&lt;br&gt;    &lt;strong&gt;Parameters:&lt;/strong&gt;&lt;br&gt;        1.x: x axis of the end-effort point;&lt;br&gt;        2.y: y axis of the end-effort point;&lt;br&gt;        3.z: z axis of the end-effort point;&lt;br&gt;    &lt;strong&gt;Return Values:&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1. n1: the rotation angle along the axis z1;
+    2. n2: the rotation angle along the axis x1;
+    3. n3: the rotation angle along the axis x2;
+**Input Values:** none
+**Output Values:** none
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4-5-draw-m&quot;&gt;&lt;a href=&quot;#4-5-draw-m&quot; class=&quot;headerlink&quot; title=&quot;4.5 draw.m&quot;&gt;&lt;/a&gt;4.5 draw.m&lt;/h4&gt;&lt;p&gt;function [] = draw( P3,P4,P5,rotationMatrix )&lt;br&gt;    &lt;strong&gt;Parameters:&lt;/strong&gt; &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1. P3: the position of the origin point of frame x3-y3-z3;
+    2. P4: the position of the origin point of frame x4-y4-z4;
+    3. P5: the position of the end-effector point;
+    4. rotationMatrix: the orientation of the end-effector.
+**Return Values:** none.
+**Input Values:** none.
+**Output Values:** A painting that shows the shape of the robot.
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;1-The-direct-kinematics&quot;&gt;&lt;a href=&quot;#1-The-direct-kinematics&quot; class=&quot;headerlink&quot; title=&quot;1. The direct kinematics&quot;&gt;&lt;/a&gt;1. The direct ki
     
     </summary>
     
