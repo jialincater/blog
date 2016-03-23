@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jialin.wang/tags/index.html</loc>
+    
+    <lastmod>2016-03-23T11:52:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jialin.wang/guestbook/index.html</loc>
     
     <lastmod>2016-03-23T09:39:47.000Z</lastmod>
