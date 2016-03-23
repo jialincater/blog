@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jialin.wang/"/>
-  <updated>2016-03-22T10:41:19.000Z</updated>
+  <updated>2016-03-23T08:24:43.000Z</updated>
   <id>http://jialin.wang/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jialin.wang/2016/03/11/CoreMIDI/"/>
     <id>http://jialin.wang/2016/03/11/CoreMIDI/</id>
     <published>2016-03-11T01:43:00.000Z</published>
-    <updated>2016-03-22T10:41:19.000Z</updated>
+    <updated>2016-03-23T08:24:43.000Z</updated>
     
     <content type="html">&lt;p&gt;做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。&lt;/p&gt;
 &lt;p&gt;由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。&lt;/p&gt;
@@ -34,6 +34,7 @@
 &lt;p&gt;At last, CoreMIDI库中当然不仅仅有上述这几个方法，但是上面提到的可以说是一定会被用到。有关其他关于MIDI有趣的Point，我会以后再补充。&lt;/p&gt;
 &lt;p&gt;另外，关于MIDISendSysEx()的Info也非常有意思，因为不常用，在这里不赘述了。&lt;/p&gt;
 &lt;p&gt;Thanks to &lt;a href=&quot;http://www.rockhoppertech.com/blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Gene De Lisa&lt;/a&gt;‘s Post and all his great effort and passion on both music and programming.&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -60,7 +61,7 @@
     <link href="http://jialin.wang/2016/02/27/cat_Lang/"/>
     <id>http://jialin.wang/2016/02/27/cat_Lang/</id>
     <published>2016-02-27T09:30:00.000Z</published>
-    <updated>2016-03-22T10:41:14.000Z</updated>
+    <updated>2016-03-23T08:24:39.000Z</updated>
     
     <content type="html">&lt;p&gt;这个博客写了两年了吧，看了看还真没啥有用的东西，还是坚持写下去吧，至少给自己留一点记忆。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xlk6d.com1.z0.glb.clouddn.com/logo-fundacio-footer.png?attname=&amp;amp;e=1456577286&amp;amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:fic2sKnDeY3ZmFIhBX2fGcfzQ4I&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
@@ -81,6 +82,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;综上。这个cat语还是和西语不一样的，所以翻译的时候还是按照cat语翻吧~ 然后就是一段故事，大概就是说cat语和西语同样历史悠久，而且沿袭至今。&lt;br&gt;大概就这样啦。所以买.cat域名的小伙伴们还是准备好翻译再买吧。续费也真心不便宜。但是&lt;strong&gt;.cat&lt;/strong&gt;还是很靓的呢！&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xlk6d.com1.z0.glb.clouddn.com/notici100_1.jpg?attname=&amp;amp;e=1456577251&amp;amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:1tI1axgXLMWA1lchxL6RgK01r2Q&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -104,7 +106,7 @@
     <link href="http://jialin.wang/2016/02/05/ios_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0_1/"/>
     <id>http://jialin.wang/2016/02/05/ios_读书笔记_1/</id>
     <published>2016-02-05T04:43:00.000Z</published>
-    <updated>2016-03-22T10:42:28.000Z</updated>
+    <updated>2016-03-23T08:25:19.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h3&gt;&lt;h5 id=&quot;The-object-that-received-the-message-is-called-target&quot;&gt;&lt;a href=&quot;#The-object-that-received-the-message-is-called-target&quot; class=&quot;headerlink&quot; title=&quot;The object that received the message is called target&quot;&gt;&lt;/a&gt;&lt;strong&gt;The object that received the message is called target&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;接收消息的一方叫做target&lt;/p&gt;
 &lt;h5 id=&quot;The-message-sent-is-called-the-action&quot;&gt;&lt;a href=&quot;#The-message-sent-is-called-the-action&quot; class=&quot;headerlink&quot; title=&quot;The message sent is called the action&quot;&gt;&lt;/a&gt;&lt;strong&gt;The message sent is called the action&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;发出的消息叫做action&lt;/p&gt;
@@ -134,6 +136,7 @@
 &lt;h5 id=&quot;But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types&quot;&gt;&lt;a href=&quot;#But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types&quot; class=&quot;headerlink&quot; title=&quot;But in objective-C, you can not have two methods with the same selector and different return types&quot;&gt;&lt;/a&gt;&lt;strong&gt;But in objective-C, you can not have two methods with the same selector and different return types&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;在oc，你不能有同名且参数或返回类型不同的方法&lt;/p&gt;
 &lt;h5 id=&quot;id-is-defined-as-a-pointer-to-any-object&quot;&gt;&lt;a href=&quot;#id-is-defined-as-a-pointer-to-any-object&quot; class=&quot;headerlink&quot; title=&quot;id is defined as a pointer to any object&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;id&lt;/em&gt; is defined as a pointer to any object&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;id是一个指向任何对象的指针&lt;/p&gt;
 &lt;h5 id=&quot;isa-pointer-is-a-pointer-to-its-class&quot;&gt;&lt;a href=&quot;#isa-pointer-is-a-pointer-to-its-class&quot; class=&quot;headerlink&quot; title=&quot;isa pointer is a pointer to its class&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;isa&lt;/em&gt; pointer is a pointer to its class&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;isa指针是指向一个对象的类的指针，他描述了obj is a class&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -156,10 +159,11 @@
     <link href="http://jialin.wang/2016/02/05/ios_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://jialin.wang/2016/02/05/ios_读书笔记/</id>
     <published>2016-02-05T04:21:00.000Z</published>
-    <updated>2016-03-22T10:42:22.000Z</updated>
+    <updated>2016-03-23T08:25:13.000Z</updated>
     
     <content type="html">&lt;p&gt;刚刚放假一周，自己肯定不能闲着，这学期的考试大获全胜，假期得继续做点有意义的事，所以呢，想系统的学学iOS，因此，经过一系列筛选，最后选择了&lt;strong&gt;iOS Programming THE BIG NERD RANCH GUIDE&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;自以为接触的语言较多，现在读完了前两章，感觉由浅入深，介绍的很不错，尤其介绍了oc和其他语言的不同之处，很符合我的口味。写这个东西主要是给自己一个总结的机会，可能对于第三者（3rd Party,不要想太多）帮助不很大。大概内容就是抄抄书，增加一遍印象而已。&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -183,7 +187,7 @@
     <link href="http://jialin.wang/2015/12/23/%E5%8F%82%E8%A7%82GoogleCamp/"/>
     <id>http://jialin.wang/2015/12/23/参观GoogleCamp/</id>
     <published>2015-12-22T16:09:00.000Z</published>
-    <updated>2016-03-22T10:40:14.000Z</updated>
+    <updated>2016-03-23T08:23:50.000Z</updated>
     
     <content type="html">&lt;p&gt;加入GC一年了吧&lt;br&gt;现在成了社长，今天带着大家去参观了Google北京&lt;br&gt;Google里面条件真是好，只有看了才知道&lt;br&gt;也算是完成了今年的一大活动啦吧&lt;/p&gt;
 &lt;p&gt;Kathy介绍了好多，小伙伴们也各有感悟，&lt;br&gt;总之还是说好的比较多&lt;br&gt;毕竟工资条件还有员工待遇都是一流的&lt;br&gt;一切都是高大上的样子&lt;/p&gt;
@@ -193,6 +197,7 @@
 &lt;p&gt;真希望以后到美帝之后可以去Google实习两天&lt;br&gt;镀镀金，长长见识&lt;br&gt;在去旧金山参加一下Google I/O或者WWDC&lt;br&gt;那真是此生无憾了。。。&lt;/p&gt;
 &lt;p&gt;现在，怀揣着些许忐忑和梦想&lt;br&gt;搞着实验室里的东西，应付着挂科&lt;br&gt;捎带着慢慢干毕设&lt;br&gt;慢慢积攒人脉&lt;br&gt;一点一点来吧&lt;/p&gt;
 &lt;p&gt;我一直在感叹上帝一直眷顾我&lt;br&gt;自己真的应该在努力一点&lt;br&gt;再真诚一点&lt;br&gt;再善良一点&lt;br&gt;珍惜自己拥有的一切&lt;br&gt;付出更多自己可以付出的东西&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -216,7 +221,7 @@
     <link href="http://jialin.wang/2015/09/02/mibileconfig/"/>
     <id>http://jialin.wang/2015/09/02/mibileconfig/</id>
     <published>2015-09-02T06:32:00.000Z</published>
-    <updated>2016-03-22T10:42:44.000Z</updated>
+    <updated>2016-03-23T08:25:34.000Z</updated>
     
     <content type="html">&lt;p&gt;Q: How to set up VPN in a quick way?&lt;br&gt;A: Use a config file.&lt;/p&gt;
 &lt;p&gt;In Mac/iOS, there’s a build in config file developed by Apple - &lt;em&gt;*.mobileconfig&lt;/em&gt;, here is the description on &lt;a href=&quot;fileinfo.com&quot;&gt;fileinfo&lt;/a&gt;.&lt;/p&gt;
@@ -238,6 +243,7 @@
 &lt;p&gt;openssl smime -sign -signer path/to/crt -inkey path/to/key -certfile path/to/ca-bundle -nodetach -outform der -in name.mobileconfig -out profile_signed.mobileconfig&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Everything will be alright then.&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -265,7 +271,7 @@
     <link href="http://jialin.wang/2015/09/01/domain/"/>
     <id>http://jialin.wang/2015/09/01/domain/</id>
     <published>2015-09-01T12:13:00.000Z</published>
-    <updated>2016-03-22T10:41:25.000Z</updated>
+    <updated>2016-03-23T08:24:49.000Z</updated>
     
     <content type="html">&lt;p&gt;有朋友说域名在国内容易有可能被HOLD，加上自己的域名马上就要到期了，因此痛下决心要把域名转到国外的服务商那里去。&lt;/p&gt;
 &lt;p&gt;我的域名是在&lt;a href=&quot;http://www.163ns.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中国互联&lt;/a&gt;购买的，废了半天劲找回了密码然后登入账户写ticket申请域名转出，在下周一就得到了回复，要求我联系qq客服。&lt;/p&gt;
@@ -286,6 +292,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;然后他回复跟我说，是他搞错了，实际上你的域名已经转出完成（我汗…），他会转告技术部门最后结束我域名的transfer. 过了一天，我接到邮件，说我域名转出完成。又过了一天，在Europe Registry的控制面板上就可以对域名进行各种操作了。&lt;/p&gt;
 &lt;p&gt;总的来讲，这次转出大概用了一个月的时间，来来回回写申请，寄东西，发工单还有最后Europe Registry那边长时间的没反应耽误了好多时间。能转出成功还是要说这两边的客服还不错。转出了而且续期了，顿时有一种神清气爽的感觉。&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -309,13 +316,14 @@
     <link href="http://jialin.wang/2015/06/17/2015-06-17/"/>
     <id>http://jialin.wang/2015/06/17/2015-06-17/</id>
     <published>2015-06-17T15:41:00.000Z</published>
-    <updated>2016-03-22T10:40:30.000Z</updated>
+    <updated>2016-03-23T08:24:12.000Z</updated>
     
     <content type="html">&lt;p&gt;今天是6月17日，7月12日就要离开葡萄牙了。只有不到一个月的时间了。有时候甚至没有心情去旅游，只想静静的呆在朋友们的身边。&lt;br&gt;国内的好多朋友很久不见了。19号意平又要回台湾。佳佳那货每天就知道没心没肺的忙考试。感觉全世界都怪怪的。没有一个每天都陪你的人，就是会没有安全感。&lt;br&gt;回国要面对好多事，补考、重修、托福、GRE、课设、毕设、申请。感觉就要没有时间了。室友说，如果他没拿到奖学金，他就要休学去找工作，因为他没有足够的钱继续读下去了。相反我们有多幸福啊。。。&lt;br&gt;感觉，有的时候不要给自己太大压力，想想来到IST也是不错的。毕竟确实能学到好多东西。是一所不错的大学。你在这里，是不是已经熟识了很多人。知道了很多事。经历了很多寂寞，然而让你更熟悉了这个城市。相比北京的喧嚣，这里更多的是自由与没有打扰。这就是不同之处吧。但是谁知道，如果再回来，这个里斯本还是你认识的里斯本吗？&lt;br&gt;总有好多事，我不愿意去想，毕竟想也没用。因为根本不可能改变。。。分别是必须要经历的，不管是和这个城市分别，还是和这里的人分别。这样的场景完全不会回来了。这些人，永远凑不到一起了。就是这样。俗俗的说一句，天下没有不散的宴席，室友跟我说他离开印度的时候也是做着相同的心里准备的。不知道为什么，虽然是个“工程师”，有时候我就是接受不了这些事。&lt;br&gt;从albufeira回来之后就一直很烦乱。静不下心来，而且还一直都很疲劳。身体累，心更累，希望明天可以振作起来。好好看看OOP。后天考完，这里的学业也就结束了。&lt;br&gt;祝大家安好。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Well you only need the light when it’s burning low&lt;br&gt;Only miss the sun when it starts to snow&lt;br&gt;Only know you love her when you let her go&lt;br&gt;Only know you’ve been high when you’re feeling low&lt;br&gt;Only hate the road when you’re missin’ home&lt;br&gt;Only know you love her when you let her go&lt;/p&gt;
 &lt;p&gt;And you let her go&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -338,7 +346,7 @@
     <link href="http://jialin.wang/2015/06/01/2015-06-01/"/>
     <id>http://jialin.wang/2015/06/01/2015-06-01/</id>
     <published>2015-06-01T03:17:00.000Z</published>
-    <updated>2016-03-22T10:40:31.000Z</updated>
+    <updated>2016-03-23T08:24:06.000Z</updated>
     
     <content type="html">&lt;p&gt;#咖啡馆补餐&lt;br&gt;一天天过的真的好快，眼看着Cluster4打完了，4场异常全部结束。我们拖着疲惫的身躯和没电的手机在2号Po旁边的咖啡馆照了一张相。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/wKsLNk0.jpg&quot; alt=&quot;Imgur&quot;&gt;&lt;br&gt;此时我发现了我的iphone手机充电线断了。因此我的手机无法充电。一会还有游泳的活动和party。。。旁边一帮人都是用安卓的。这边周末所有商店根本不开。。眼看就要跪了。。这个时候Bruno跟我说他的车上有个转接头。因此我才安心的继续和他们一起呆着。&lt;/p&gt;
 &lt;p&gt;#游泳池晒太阳&lt;br&gt;过了一会大概吃完了吧，（我们都没吃，老外也是靠吃面包过来的，幸亏早饭吃的多，我一直在等晚上party狂吃，因为他们聊天，我也没啥话说，就得吃吃吃）Bruno夫妇回车上准备回家，我跟着队长老婆和Nuno去游泳池，我没带游泳裤，只能在旁边无聊的看美女，喝藿香正气和晒太阳。。。&lt;br&gt;过了一会Bruno过来了，给我送来了安卓转iphone的转接口，又给手机冲上了电。。。又过了不大一会，队长过来了，他和Nuno一起开始游泳。。。我接着无聊。不过借到了队长的安卓线，我就开始给手机充电，然后回答王熠晨的奇怪问题。。等他们玩爽了，队长送我们回旅店。&lt;/p&gt;
@@ -346,6 +354,7 @@
 &lt;p&gt;#Dawn&lt;br&gt;第二天同样早早的起来，上午抓紧时间刷Po。准备把所有的UPC和UPV都搞定，顺便做任务，不过这边的任务真的太坑了。。。我也就没怎么做。上午就是绕绕绕，至少把城区po最密的地方饶了一遍了吧，能占的都占了。任务貌似就做了2个，实在太虐了。。。然后就往回走，走到离旅馆比较近的教堂，看到一个蓝po，打打打！废了300多个8炸也没炸掉，不过得了30w的AP，也就半小时吧，还是很爽的，我一想快到12点了，还是回去checkout吧，然后就回去，收拾东西，在床上躺会，拿好所有东西，checkout，坐等队长。然后。。。。就没等来，一看快2点了。就一边刷po一边往火车站走。结果路上收到了队长的消息，然后我有往回走，最后在昨天绿军集合的地方我上车，他接我回里斯本。。在车上我已经很累了。差点睡着了。。。中间收费站休息一次，上了个厕所，先去Nuno家给他插脚，然后把我送到了Moscavide门口。。。我们下车，我从他包里取走了昨天的纪念品，然后回到了宿舍。&lt;/p&gt;
 &lt;p&gt;#Twilight&lt;br&gt;回家，收拾collection，把海贼王补了，睡觉，第二天起床上学，准备还Bruno那个转换器，在civil吃了饭，到造币厂门口，开始hack，然后竟然聚了6个人，我把转换器给Bruno，结果他说不用了。。反正我也不用。。。诶。。。葡萄牙人真TM好。。。然后他们请我喝了cafe，我们又聊起了前天的事情，还历历在目，队长还跟另一个大叔说我前天守第四个Po的时候使劲插紫盾，结果插完就被打掉，插完就被打掉，因为VR的盾都用完了。。。大家都很开心。。。&lt;br&gt;我也终于写完了这次记录。。。但是呢。。。我还没有复习。。周一就这么水了哈哈哈哈哈哈哈。。&lt;/p&gt;
 &lt;p&gt;#END&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/9vBjs2O.jpg&quot; alt=&quot;Imgur&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -370,7 +379,7 @@
     <link href="http://jialin.wang/2015/05/31/2015-05-31/"/>
     <id>http://jialin.wang/2015/05/31/2015-05-31/</id>
     <published>2015-05-31T15:35:00.000Z</published>
-    <updated>2016-03-22T10:52:12.000Z</updated>
+    <updated>2016-03-23T08:23:22.000Z</updated>
     
     <content type="html">&lt;p&gt;#Sun Rise&lt;br&gt;周六，一大早可能有点激动吧，8点多就爬起来，闹钟都没用上，洗澡，下楼吃美味的早餐自助。开始问队长+Filipe “Chycha”Azevedo啥时候集合，然后他说他也不知道。哈哈哈。等消息，最后说10：30，大概10点走出去，10分钟就到了集合地点。看到了队长。和副队长，葡萄牙绿军领袖Nuno Ferreira，热情的握手，打招呼。然后。。。他们一帮人开始聊。。。我就没啥聊的（听不懂葡语呀。。）在后面听着。最后估计是太阳越来越热了大家决定去旁边的咖啡馆坐会。他们做成一团，我依然在旁边绕。。。&lt;br&gt;过了一会，人越聚越多，然后Bruno Bruges Grade在Tg上问你们在哪里，给他发了个位置就出去接他。然后看到他和他Wife一起来，我们进去，他招呼我坐到了大家身边，我们坐了一大桌。感觉好舒服～虽然他们还是基本用葡语聊吧。。。不过。。。感觉就不一样了。。。&lt;/p&gt;
 &lt;p&gt;#Enlightened&lt;br&gt;须臾，有消息说那边开始签到了，于是他们纷纷过去排队，我就留了下来等Bruno夫妇，等匆匆喝完咖啡之后，我们一起回到广场签到。实际上签到就是一袋子东西，里面有牌子，贴画，Res的卡，牌子的卡，然后就是买T恤，之后又排一队领胸牌。然后又是大家凑到一起聊天。等了一会大家东西都领完了就是啪啪啪使劲照相。然后，宣布队伍集结，开始干活。&lt;br&gt;&lt;img src=&quot;http://i.imgur.com/6JONyRq.jpg&quot; alt=&quot;Img&quot;&gt;&lt;/p&gt;
@@ -404,6 +413,7 @@
 &lt;p&gt;Total for this Satellite Site:&lt;br&gt;&lt;strong&gt;Resistance&lt;/strong&gt; - 624 - Enlightened - 392&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;这次绿军做的link比较多。控制了局面。但是由于第二轮第三轮的劣势，这次又仅仅是微弱优势，已经无法挽回了。所以总分还是输了。&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -428,7 +438,7 @@
     <link href="http://jialin.wang/2015/05/29/2015-05-29/"/>
     <id>http://jialin.wang/2015/05/29/2015-05-29/</id>
     <published>2015-05-29T12:15:00.000Z</published>
-    <updated>2016-03-22T10:40:10.000Z</updated>
+    <updated>2016-03-23T08:23:29.000Z</updated>
     
     <content type="html">&lt;p&gt;在葡萄牙，每次都喜欢在火车上没事干的时候瞎写写，有闲时吧生活记录下来也是好的，尽管没有别人会看到，尽管自己也不会再去看，也算是把生活一点一点沉淀下来。。&lt;/p&gt;
 &lt;p&gt;#这周的考试&lt;br&gt;先记录一下在之前发生的事吧，要从这周考试说起了吧，这周一是Robotic考试，周三是TeleSys 3rd Mini Test,周五是机器人验收。&lt;/p&gt;
@@ -439,6 +449,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;希望明天一切顺利&lt;br&gt;Let’s enlighten the world&lt;br&gt;By Cater&lt;br&gt;May 29, 2015&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -464,7 +475,7 @@
     <link href="http://jialin.wang/2015/05/18/Learning%20Baysian%20network/"/>
     <id>http://jialin.wang/2015/05/18/Learning Baysian network/</id>
     <published>2015-05-18T00:17:00.000Z</published>
-    <updated>2016-03-22T10:42:39.000Z</updated>
+    <updated>2016-03-23T08:25:29.000Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Outline&quot;&gt;&lt;a href=&quot;#Outline&quot; class=&quot;headerlink&quot; title=&quot;Outline&quot;&gt;&lt;/a&gt;Outline&lt;/h2&gt;&lt;p&gt;In this project, a BN and a DBN is learned from the given data using Greedy Hill Climbing and random restarts. A directed graph without any edge is seen as the initial graph, then an algorithm called GHC is used and with this method, a better structure is found step by step supported by the scoring function, until a situation that every neighbor of the current status have lower score then the current, then random restart is executed. In this way, the best structure will be get. After that, parameter of this structure can be calculate so that inference can be done to predict the value.&lt;/p&gt;
 &lt;h2 id=&quot;Basic-Steps&quot;&gt;&lt;a href=&quot;#Basic-Steps&quot; class=&quot;headerlink&quot; title=&quot;Basic Steps&quot;&gt;&lt;/a&gt;Basic Steps&lt;/h2&gt;&lt;h3 id=&quot;BN-StructureLearning&quot;&gt;&lt;a href=&quot;#BN-StructureLearning&quot; class=&quot;headerlink&quot; title=&quot;BN StructureLearning&quot;&gt;&lt;/a&gt;BN StructureLearning&lt;/h3&gt;&lt;p&gt;At the very beginning, structure learning is necessary to find out the best-scored structure in BN.&lt;br&gt;With the initial network which has N vertex generated by the data class, in every step in GHC, program will find out the better scored structure in its neighbor, that structure will be seem as current structure. In this way, the current structure will be better and better until the program find a structure that all its neighbor have lower score, that means, a local best is found. To deal with this situation, random restart will be executed, a random graph generator will be called and a new random graph will be returned as the current structure, then GHC is applied again. After several times of random restart, a global best is found.&lt;br&gt;In the progress above, a TABU list is also applied when checking the neighbor of the current structure, if the neighbor is in the TABU list, ignore it and check the next one, else, calculate its score and add it into TABU list.&lt;/p&gt;
@@ -499,6 +510,7 @@
 
 
 &lt;h2 id=&quot;Agradecimentos&quot;&gt;&lt;a href=&quot;#Agradecimentos&quot; class=&quot;headerlink&quot; title=&quot;Agradecimentos&quot;&gt;&lt;/a&gt;Agradecimentos&lt;/h2&gt;&lt;p&gt;Thank to Prof. Alexandra Carvalho supporting our project, especially for the doubt session in English, we really appreciate that!&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/2*p_numberofnode;&gt;</content>
     
     <summary type="html">
@@ -523,7 +535,7 @@
     <link href="http://jialin.wang/2015/05/12/%E5%9B%9E%E6%9D%A5%E4%B9%8B%E5%90%8E/"/>
     <id>http://jialin.wang/2015/05/12/回来之后/</id>
     <published>2015-05-12T11:03:00.000Z</published>
-    <updated>2016-03-22T10:40:13.000Z</updated>
+    <updated>2016-03-23T08:23:47.000Z</updated>
     
     <content type="html">&lt;p&gt;听着久石让的音乐&lt;br&gt;不知道心里是怎么想的&lt;br&gt;只是想找个人好好聊聊&lt;br&gt;沉淀一下这两天发生的事&lt;/p&gt;
 &lt;p&gt;认真有什么用，不认真又有什么用&lt;br&gt;信教有什么用，不信教又会怎样&lt;br&gt;民主真正是什么，不民主到底差距在哪&lt;/p&gt;
@@ -534,6 +546,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;是不是又多了一个伤心之地呢?&lt;/p&gt;
 &lt;p&gt;May 12th, 2015&lt;br&gt;B122a&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -549,9 +562,9 @@
     
       <category term="Portugal" scheme="http://jialin.wang/tags/Portugal/"/>
     
-      <category term="Travel" scheme="http://jialin.wang/tags/Travel/"/>
-    
       <category term="IST" scheme="http://jialin.wang/tags/IST/"/>
+    
+      <category term="Travel" scheme="http://jialin.wang/tags/Travel/"/>
     
   </entry>
   
@@ -560,7 +573,7 @@
     <link href="http://jialin.wang/2015/05/12/%E6%B3%A2%E5%B0%94%E5%9B%BE%E5%92%8C%E7%A7%91%E8%8B%B1%E5%B8%83%E6%8B%89/"/>
     <id>http://jialin.wang/2015/05/12/波尔图和科英布拉/</id>
     <published>2015-05-12T04:13:00.000Z</published>
-    <updated>2016-03-22T10:40:12.000Z</updated>
+    <updated>2016-03-23T08:23:42.000Z</updated>
     
     <content type="html">&lt;p&gt;上个周末&lt;br&gt;大概是一场说走就走的旅行&lt;br&gt;波尔图和科英布拉&lt;br&gt;2个人，3个人，3个人，2个人，4天&lt;/p&gt;
 &lt;p&gt;让我感受了与上帝最近的距离&lt;br&gt;又感受了离中国最远的距离&lt;/p&gt;
@@ -591,6 +604,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Bring me to the god&lt;br&gt;May 12th, 2015 on the train&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -616,7 +630,7 @@
     <link href="http://jialin.wang/2015/05/06/Feeling%20in%20my%20heart/"/>
     <id>http://jialin.wang/2015/05/06/Feeling in my heart/</id>
     <published>2015-05-06T13:51:00.000Z</published>
-    <updated>2016-03-22T10:41:39.000Z</updated>
+    <updated>2016-03-23T08:25:02.000Z</updated>
     
     <content type="html">&lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun within heart&lt;/p&gt;
 &lt;p&gt;Staring at the Mac’s screen&lt;br&gt;Talking about the future and sin&lt;br&gt;Lie down on bed toss and turn&lt;br&gt;having fun outof mind&lt;/p&gt;
@@ -635,7 +649,8 @@
         a.add(&amp;quot;miao&amp;quot;);
         System.out.println(a);
     }
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
@@ -655,11 +670,12 @@
     <link href="http://jialin.wang/2015/05/06/All%20about%20us/"/>
     <id>http://jialin.wang/2015/05/06/All about us/</id>
     <published>2015-05-06T13:51:00.000Z</published>
-    <updated>2016-03-22T10:40:53.000Z</updated>
+    <updated>2016-03-23T08:24:24.000Z</updated>
     
     <content type="html">&lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun within heart&lt;/p&gt;
 &lt;p&gt;Staring at the Mac’s screen&lt;br&gt;Talking about the future and sin&lt;br&gt;Lie down on bed toss and turn&lt;br&gt;having fun outof mind&lt;/p&gt;
 &lt;p&gt;’‘’&lt;br&gt;public static void main(String[] args) throws IAException {&lt;br&gt;        String[] s = new String[8];&lt;br&gt;        s[1]=”jialin”;s[3]=”pengcong”;s[5]=”Iping”;&lt;br&gt;        IterableArray&lt;string&gt; a = new IterableArray&lt;string&gt;(s);&lt;br&gt;        System.out.println(a);&lt;br&gt;        a.add(“Jianjian”);&lt;br&gt;        myIterator&lt;string&gt; its = new myIterator&lt;string&gt;(a);&lt;br&gt;        while(its.hasNext()){&lt;br&gt;            String pp = its.next();&lt;br&gt;            System.out.println(pp);&lt;br&gt;            its.remove();&lt;br&gt;        }&lt;br&gt;        a.add(“miao”);&lt;br&gt;        System.out.println(a);&lt;br&gt;    }&lt;br&gt;‘’‘&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -682,7 +698,7 @@
     <link href="http://jialin.wang/2015/04/23/TR5%20kinematics/"/>
     <id>http://jialin.wang/2015/04/23/TR5 kinematics/</id>
     <published>2015-04-23T15:35:00.000Z</published>
-    <updated>2016-03-22T10:42:50.000Z</updated>
+    <updated>2016-03-23T08:25:39.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;1-The-direct-kinematics&quot;&gt;&lt;a href=&quot;#1-The-direct-kinematics&quot; class=&quot;headerlink&quot; title=&quot;1. The direct kinematics&quot;&gt;&lt;/a&gt;1. The direct kinematics&lt;/h3&gt;&lt;h4 id=&quot;1-1-Outline&quot;&gt;&lt;a href=&quot;#1-1-Outline&quot; class=&quot;headerlink&quot; title=&quot;1.1  Outline&quot;&gt;&lt;/a&gt;1.1  Outline&lt;/h4&gt;&lt;p&gt;A direct kinematics is an approach from which we can get the final position and orientation of any part of ROB3/TR5 robot. With the given 5 angles and the graph of the robot, rotation matrix is composed to describe the movements of the robot. Finally, the position described in base frame and orientation of every part of robot can be figured out.&lt;/p&gt;
 &lt;h4 id=&quot;1-2-Establishment-of-the-coordinate-system&quot;&gt;&lt;a href=&quot;#1-2-Establishment-of-the-coordinate-system&quot; class=&quot;headerlink&quot; title=&quot;1.2 Establishment of the coordinate system&quot;&gt;&lt;/a&gt;1.2 Establishment of the coordinate system&lt;/h4&gt;&lt;p&gt;To describe the position and the orientation of all the part of the robot, serials of coordinate system should be established as described in figure below. As can be seen in the picture, the base frame is established at the bottom of the robot.&lt;br&gt;        And then, the other coordinate systems can also be established to describe the other part of the robot.&lt;/p&gt;
@@ -756,7 +772,8 @@ Output Values: none
 **Return Values:** none.
 **Input Values:** none.
 **Output Values:** A painting that shows the shape of the robot.
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
@@ -780,7 +797,7 @@ Output Values: none
     <link href="http://jialin.wang/2015/02/22/About%20visa/"/>
     <id>http://jialin.wang/2015/02/22/About visa/</id>
     <published>2015-02-22T12:40:00.000Z</published>
-    <updated>2016-03-22T10:40:44.000Z</updated>
+    <updated>2016-03-23T08:24:18.000Z</updated>
     
     <content type="html">&lt;p&gt;现在在葡萄牙了，前两天一直在办理葡萄牙的签证。实际上葡萄牙的签证在欧盟里算是最难办的。以下是一些简单的经验总结：&lt;br&gt;葡萄牙签证最好提前2到3个月准备，这样时间才不会紧张，如果你确定你的认证和双认证都会很顺利的话，可以提前一个半月准备。&lt;/p&gt;
 &lt;p&gt;###物品准备&lt;/p&gt;
@@ -804,6 +821,7 @@ Output Values: none
 &lt;p&gt;####机票订单（晚于你的签证时间）&lt;/p&gt;
 &lt;p&gt;####申根签申请表（&lt;a href=&quot;http://www.portugalembassychina.com/index.php?lng=cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;大使馆官网&lt;/a&gt;下载）+2张护照照片&lt;/p&gt;
 &lt;p&gt;拿着这些东西，去大使馆（要提前了解使馆开放签证的时间，使馆不是随时都为你服务的）就好啦，注意葡萄牙是送签，不是面签，所以只要材料准备全了就一般都会给过，可以同时让对方学校给这边的签证官发邮件。这样大概会加快进度。送签之后原则上来讲签证下来的时间是10个工作日，实际上会快一些～不到半个月就能拿到签证了&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -849,7 +867,7 @@ Output Values: none
     <link href="http://jialin.wang/2015/01/16/Hazelost/"/>
     <id>http://jialin.wang/2015/01/16/Hazelost/</id>
     <published>2015-01-16T13:42:00.000Z</published>
-    <updated>2016-03-22T10:41:52.000Z</updated>
+    <updated>2016-03-23T08:25:09.000Z</updated>
     
     <content type="html">&lt;p&gt;Write an article with your name.&lt;br&gt;Cuz she is the only one you loved.&lt;br&gt;I would like to know what you were feeling.&lt;br&gt;However, I am not feeling good.&lt;/p&gt;
 &lt;p&gt;I never asked how you were getting together&lt;br&gt;&amp;amp; how you got separated.&lt;br&gt;You disappeared in the Haze.&lt;br&gt;And she lost on street.&lt;/p&gt;
@@ -861,6 +879,7 @@ Output Values: none
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;p&gt;By Cater&lt;br&gt;Fri. Jan. 16th, 2015&lt;/p&gt;
+&lt;p&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
