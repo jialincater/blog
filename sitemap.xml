@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jialin.wang/categories/index.html</loc>
+    
+    <lastmod>2016-03-23T09:01:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jialin.wang/tags/index.html</loc>
+    
+    <lastmod>2016-03-23T09:01:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jialin.wang/2014/10/30/WonderfulLife/</loc>
     
     <lastmod>2016-03-23T08:35:50.000Z</lastmod>
@@ -180,20 +194,6 @@
     <loc>http://jialin.wang/about/index.html</loc>
     
     <lastmod>2016-03-23T03:44:45.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jialin.wang/categories/index.html</loc>
-    
-    <lastmod>2016-03-22T10:31:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jialin.wang/tags/index.html</loc>
-    
-    <lastmod>2016-03-22T10:21:31.000Z</lastmod>
     
   </url>
   
