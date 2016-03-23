@@ -48,11 +48,11 @@
       <category term="tech" scheme="http://jialin.wang/categories/tech/"/>
     
     
-      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
-    
       <category term="iOS" scheme="http://jialin.wang/tags/iOS/"/>
     
       <category term="Objective-C" scheme="http://jialin.wang/tags/Objective-C/"/>
+    
+      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
     
   </entry>
   
