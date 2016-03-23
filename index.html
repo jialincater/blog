@@ -193,45 +193,15 @@
             
               <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
             
-            ChatRoom
+            Chat room
           </a>
         </li>
       
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="st-search-show-outputs">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            
-          </a>
-        </li>
       
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'QknWxx_aU5nRLCe2mwWH','2.0.0');
-</script>
-
-
-
-    </div>
   
 </nav>
 
@@ -334,22 +304,14 @@
 
       
         
-          
-            <p>做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。</p>
+          <p>做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。</p>
 <p>由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。</p>
-<p>话说，在iOS MIDI界一定要提的就是<a href="http://www.rockhoppertech.com/blog/" target="_blank" rel="external">Gene De Lisa</a>大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的，虽然总是没什么用，但是多少会给我一点启发。</p>
-<h4 id="最简单的MIDI包发送实现"><a href="#最简单的MIDI包发送实现" class="headerlink" title="最简单的MIDI包发送实现"></a>最简单的MIDI包发送实现</h4><p>感觉对于初学者来讲，上苹果官网花半天看了一遍document，看完之后感觉比看之前还糊涂。其实先看看成品代码也没什么不好的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">MIDIClientRef client;</span><br><span class="line">MIDIPortRef outputPort;</span><br><span class="line">MIDIClientCreate(CFSTR(&quot;clientID&quot;), nil, nil, &amp;client);</span><br><span class="line">MIDIOutputPortCreate(client, CFSTR(&quot;PortID&quot;), &amp;outputPort);</span><br><span class="line"></span><br><span class="line">Byte packetListBuffer[777][256];</span><br><span class="line">MIDIPacketList* pktList = (MIDIPacketList*)packetListBuffer[0];</span><br><span class="line">Byte data[]  = &#123;p1, p2, p3&#125;;</span><br><span class="line">MIDIPacket *pkt = MIDIPacketListInit(pktList);</span><br><span class="line">pkt = MIDIPacketListAdd(pktListFirstRight, 256, pkt, 0, 3, data);</span><br><span class="line">ItemCount destinationCount = MIDIGetNumberOfDestinations();</span><br><span class="line">for (int i = 0; i &lt; destinationCount; i++) &#123;</span><br><span class="line">   MIDISend(outputPort, MIDIGetDestination(i), pktList);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>是不是So Easy? 执行完这段代码，你就可以给你的MIDI设备发一个指令了。代码中p1,p2,p3是MIDI包中的数据，规则详见<a href="https://www.midi.org/specifications/item/table-1-summary-of-midi-message" target="_blank" rel="external">MIDI标准</a>.<br>当然接收MIDI消息，也可以用类似的机制。另外，在发送的接收消息的时候，推荐使用多线程，因为在发送，接收的同时，你可能还会要求iOS系统播放，或者显示这些消息，一旦时间花销很大，可能会影响整个音乐的节奏。</p>
-<h4 id="简单解释一下上面的代码吧"><a href="#简单解释一下上面的代码吧" class="headerlink" title="简单解释一下上面的代码吧~"></a>简单解释一下上面的代码吧~</h4><p>声明并初始化client和port,这个是发送指令之前必须要干的，在发送之前要明确给谁发，从哪里发。实际上，这段代码千篇一律，基本在所有使用CoreMIDI的代码中都需要。</p>
-<p>之后，读过developer文档的同学应该都知道，MIDI指令的data要藏在MIDIPacket里面,MIDIPacket要藏在MIDIPacketList里面，装的方法就是用MIDIPacketListAdd方法。一个MIDIPacketList里面可以有多个MIDIpacket，这样就可以做到向外面发送多个连续的包。在MIDIPacketListAdd方法中，值得一提的是第三个参数，表示packet的生效时间，在上面的例子中传的是0，表示NOW（即时生效），也可以增加其他的MIDI时间量。</p>
-<p>最后MIDISend在for循环中，向所有MIDI设备都发一遍MIDIPacketList,此时，在你的MIDI设备上便会有响应了。当然，如果你能确定在众多的MIDI Destination中哪一个是你真正的target，也可以直接进行send.</p>
-<p>At last, CoreMIDI库中当然不仅仅有上述这几个方法，但是上面提到的可以说是一定会被用到。有关其他关于MIDI有趣的Point，我会以后再补充。</p>
-<p>另外，关于MIDISendSysEx()的Info也非常有意思，因为不常用，在这里不赘述了。</p>
-<p>Thanks to <a href="http://www.rockhoppertech.com/blog/" target="_blank" rel="external">Gene De Lisa</a>‘s Post and all his great effort and passion on both music and programming.</p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+<p>话说，在iOS MIDI界一定要提的就是<a href="http://www.rockhoppertech.com/blog/">Gene De Lisa</a>大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的，虽然总是没什么用，但是多少会给我一点启发。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/11/CoreMIDI/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -461,29 +423,14 @@
 
       
         
-          
-            <p>这个博客写了两年了吧，看了看还真没啥有用的东西，还是坚持写下去吧，至少给自己留一点记忆。</p>
+          <p>这个博客写了两年了吧，看了看还真没啥有用的东西，还是坚持写下去吧，至少给自己留一点记忆。</p>
 <p><img src="http://7xlk6d.com1.z0.glb.clouddn.com/logo-fundacio-footer.png?attname=&amp;e=1456577286&amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:fic2sKnDeY3ZmFIhBX2fGcfzQ4I" alt="img"></p>
-<p>前天弄了个shuttle.cat的域名，刚开始买了半天没买到，人家说支付宝到账要check3天，我太着急了，cancel了好几遍订单。最后被划走了3次钱，现在都没找回来呢。最后还是光光帮忙把他买下来了。</p>
-<p>然后这个域名和以往的域名不一样，他有两条特殊规定：</p>
-<ol>
-<li>You must develop activities (in any language) that promote the Catalan language and culture</li>
-<li>You will publish a website on the internet, within 6 months following Your .CAT domain name registration, which must be fully or partly in Catalan language.</li>
-</ol>
-<p>比较硬性的规定就是要用加<strong>泰罗尼亚语</strong>弄个网页。然后呢，简单wiki之后就可以发现，这个加泰罗尼亚语大概就是巴萨罗那那块说的话，大概和西班牙语差不多吧。</p>
-<p>因此，我又马上向我的墨西哥小伙伴问了问，他告诉了我这些：</p>
-<blockquote>
-<ul>
-<li>Well I don’t know Catalan, but is like a mixture of Spanish with France and Portuguese</li>
-<li>A bit explanation is that the real name of the Spanish is “castellano” is another region from Spain but since when they conquer America the king of Spain was from that region they used to speak it and then became the Spanish language and Catalan is from “Cataluña” other region.</li>
-<li>Even today if you go to there they will speak in Catalan</li>
-</ul>
-</blockquote>
-<p>综上。这个cat语还是和西语不一样的，所以翻译的时候还是按照cat语翻吧~ 然后就是一段故事，大概就是说cat语和西语同样历史悠久，而且沿袭至今。<br>大概就这样啦。所以买.cat域名的小伙伴们还是准备好翻译再买吧。续费也真心不便宜。但是<strong>.cat</strong>还是很靓的呢！</p>
-<p><img src="http://7xlk6d.com1.z0.glb.clouddn.com/notici100_1.jpg?attname=&amp;e=1456577251&amp;token=Bz_2Yms50E57kiN99DDeCzSkH2PdERcoeoZtTCli:1tI1axgXLMWA1lchxL6RgK01r2Q" alt="img"></p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+<p>前天弄了个shuttle.cat的域名，刚开始买了半天没买到，人家说支付宝到账要check3天，我太着急了，cancel了好几遍订单。最后被划走了3次钱，现在都没找回来呢。最后还是光光帮忙把他买下来了。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/27/cat_Lang/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -595,38 +542,14 @@
 
       
         
-          
-            <h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><h5 id="The-object-that-received-the-message-is-called-target"><a href="#The-object-that-received-the-message-is-called-target" class="headerlink" title="The object that received the message is called target"></a><strong>The object that received the message is called target</strong></h5><p>接收消息的一方叫做target</p>
+          <h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><h5 id="The-object-that-received-the-message-is-called-target"><a href="#The-object-that-received-the-message-is-called-target" class="headerlink" title="The object that received the message is called target"></a><strong>The object that received the message is called target</strong></h5><p>接收消息的一方叫做target</p>
 <h5 id="The-message-sent-is-called-the-action"><a href="#The-message-sent-is-called-the-action" class="headerlink" title="The message sent is called the action"></a><strong>The message sent is called the action</strong></h5><p>发出的消息叫做action</p>
-<p>这章主要是手把手教着做了个app，没啥干货</p>
-<h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><hr>
-<h5 id="Cocoa-Touch-Frameworks-are-collections-of-objective-C-class"><a href="#Cocoa-Touch-Frameworks-are-collections-of-objective-C-class" class="headerlink" title="Cocoa Touch Frameworks are collections of objective-C class"></a><strong>Cocoa Touch Frameworks are collections of objective-C class</strong></h5><p>Cocoa Touch框架是oc的一组类</p>
-<h5 id="In-Objective-C-we-typically-put-an-underscore-at-the-begining-of-the-instance-varible-name"><a href="#In-Objective-C-we-typically-put-an-underscore-at-the-begining-of-the-instance-varible-name" class="headerlink" title="In Objective-C,we typically put an underscore at the begining of the instance varible name."></a><strong>In Objective-C,we typically put an underscore at the begining of the instance varible name.</strong></h5><p>在oc中，一般在实例变量前面加一个下划线</p>
-<h5 id="The-important-difference-between-C-structure-and-an-Objective-C-class-is-that-a-class-has-methods"><a href="#The-important-difference-between-C-structure-and-an-Objective-C-class-is-that-a-class-has-methods" class="headerlink" title="The important difference between C structure and an Objective-C class is that a class has methods"></a><strong>The important difference between C structure and an Objective-C class is that a class has methods</strong></h5><p>c的结构和oc的类的主要不同点在于oc的类有方法</p>
-<h5 id="AClass-Instance-AClass-alloc-init"><a href="#AClass-Instance-AClass-alloc-init" class="headerlink" title="AClass Instance = [[AClass alloc] init];"></a>AClass Instance = [[AClass alloc] init];</h5><p>分配内存并初始化</p>
-<ul>
-<li><strong>receiver</strong>: a pointer to the object being asked to excute a method</li>
-<li><strong>receiver</strong>:一个指向将要执行该方法的对象的指针</li>
-<li><strong>selector</strong>: the name of method to be excuted</li>
-<li><strong>selector</strong>: 方法的名字</li>
-<li><strong>argument</strong>: the values to be supplied as the parameters to the methods</li>
-<li><strong>argument</strong>: 方法的参数</li>
-</ul>
-<h5 id="Ainstance-nil"><a href="#Ainstance-nil" class="headerlink" title="Ainstance = nil;"></a><code>Ainstance = nil;</code></h5><p>最简单的释放内存的方法</p>
-<h5 id="a-message-sent-to-nil-is-ignored"><a href="#a-message-sent-to-nil-is-ignored" class="headerlink" title="a message sent to nil is ignored"></a><strong>a message sent to nil is ignored</strong></h5><p>一个向空指针发送的消息会被忽略</p>
-<h5 id="NSObject有三个方法-alloc、init和description"><a href="#NSObject有三个方法-alloc、init和description" class="headerlink" title="NSObject有三个方法 alloc、init和description"></a><strong>NSObject有三个方法 alloc、init和description</strong></h5><p>这三个方法可以被子类重写</p>
-<p><code>for (NSString *item in items)</code></p>
-<h5 id="You-can-nit-use-it-if-you-need-to-add-or-remove-objects-within-the-loop"><a href="#You-can-nit-use-it-if-you-need-to-add-or-remove-objects-within-the-loop" class="headerlink" title="You can nit use it if you need to add or remove objects within the loop."></a><strong>You can nit use it if you need to add or remove objects within the loop.</strong></h5><p>快枚举不能用于增删对象</p>
-<h5 id="Objective-C-only-allows-single-inheritance-so-every-class-can-only-has-one-super-class"><a href="#Objective-C-only-allows-single-inheritance-so-every-class-can-only-has-one-super-class" class="headerlink" title="Objective-C only allows single inheritance, so every class can only has one super class"></a><strong>Objective-C only allows single inheritance, so every class can only has one super class</strong></h5><p>oc只允许单继承，因此每个类只允许有一个父类</p>
-<h5 id="Each-initializer-begin-with-the-word-init"><a href="#Each-initializer-begin-with-the-word-init" class="headerlink" title="Each initializer begin with the word init"></a><strong>Each initializer begin with the word <em>init</em></strong></h5><p>构造函数必须以init开头</p>
-<h5 id="designated-initializer-must-initialize-all-the-varibles"><a href="#designated-initializer-must-initialize-all-the-varibles" class="headerlink" title="designated initializer must initialize all the varibles"></a><strong>designated initializer must initialize all the varibles</strong></h5><p>designated initializer必须初始化全部变量</p>
-<h5 id="instancetype-can-only-be-used-in-return-type"><a href="#instancetype-can-only-be-used-in-return-type" class="headerlink" title="instancetype can only be used in return type"></a><strong><em>instancetype</em> can only be used in return type</strong></h5><p>instancetype只能用于返回类型</p>
-<h5 id="But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types"><a href="#But-in-objective-C-you-can-not-have-two-methods-with-the-same-selector-and-different-return-types" class="headerlink" title="But in objective-C, you can not have two methods with the same selector and different return types"></a><strong>But in objective-C, you can not have two methods with the same selector and different return types</strong></h5><p>在oc，你不能有同名且参数或返回类型不同的方法</p>
-<h5 id="id-is-defined-as-a-pointer-to-any-object"><a href="#id-is-defined-as-a-pointer-to-any-object" class="headerlink" title="id is defined as a pointer to any object"></a><strong><em>id</em> is defined as a pointer to any object</strong></h5><p>id是一个指向任何对象的指针</p>
-<h5 id="isa-pointer-is-a-pointer-to-its-class"><a href="#isa-pointer-is-a-pointer-to-its-class" class="headerlink" title="isa pointer is a pointer to its class"></a><strong><em>isa</em> pointer is a pointer to its class</strong></h5><p>isa指针是指向一个对象的类的指针，他描述了obj is a class</p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+<p>这章主要是手把手教着做了个app，没啥干货<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/05/ios_读书笔记_1/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -738,12 +661,13 @@
 
       
         
-          
-            <p>刚刚放假一周，自己肯定不能闲着，这学期的考试大获全胜，假期得继续做点有意义的事，所以呢，想系统的学学iOS，因此，经过一系列筛选，最后选择了<strong>iOS Programming THE BIG NERD RANCH GUIDE</strong></p>
+          <p>刚刚放假一周，自己肯定不能闲着，这学期的考试大获全胜，假期得继续做点有意义的事，所以呢，想系统的学学iOS，因此，经过一系列筛选，最后选择了<strong>iOS Programming THE BIG NERD RANCH GUIDE</strong></p>
 <p>自以为接触的语言较多，现在读完了前两章，感觉由浅入深，介绍的很不错，尤其介绍了oc和其他语言的不同之处，很符合我的口味。写这个东西主要是给自己一个总结的机会，可能对于第三者（3rd Party,不要想太多）帮助不很大。大概内容就是抄抄书，增加一遍印象而已。</p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/05/ios_读书笔记/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -855,19 +779,14 @@
 
       
         
-          
-            <p>加入GC一年了吧<br>现在成了社长，今天带着大家去参观了Google北京<br>Google里面条件真是好，只有看了才知道<br>也算是完成了今年的一大活动啦吧</p>
+          <p>加入GC一年了吧<br>现在成了社长，今天带着大家去参观了Google北京<br>Google里面条件真是好，只有看了才知道<br>也算是完成了今年的一大活动啦吧</p>
 <p>Kathy介绍了好多，小伙伴们也各有感悟，<br>总之还是说好的比较多<br>毕竟工资条件还有员工待遇都是一流的<br>一切都是高大上的样子</p>
-<p><img src="http://i.imgur.com/nLlcDzL.jpg" alt="Imgur"></p>
-<p>从葡萄牙回来就混进了ITTC<br>给郭老师干活，学了不少东西，也涨了不少见识<br>最近开始要准备电磁场补考了<br>不知能不能把两边的事平衡好</p>
-<p>而且有幸进了UTA的Program<br>以后去美帝从机场到学校只需要10多公里<br>简直爽爽哒<br>哈哈，事情基本搞定了就不得不多想想以后的日子了</p>
-<p>真希望以后到美帝之后可以去Google实习两天<br>镀镀金，长长见识<br>在去旧金山参加一下Google I/O或者WWDC<br>那真是此生无憾了。。。</p>
-<p>现在，怀揣着些许忐忑和梦想<br>搞着实验室里的东西，应付着挂科<br>捎带着慢慢干毕设<br>慢慢积攒人脉<br>一点一点来吧</p>
-<p>我一直在感叹上帝一直眷顾我<br>自己真的应该在努力一点<br>再真诚一点<br>再善良一点<br>珍惜自己拥有的一切<br>付出更多自己可以付出的东西</p>
-<p><br></p>
-<p><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+<p><img src="http://i.imgur.com/nLlcDzL.jpg" alt="Imgur"><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/23/参观GoogleCamp/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -979,30 +898,15 @@
 
       
         
-          
-            <p>Q: How to set up VPN in a quick way?<br>A: Use a config file.</p>
+          <p>Q: How to set up VPN in a quick way?<br>A: Use a config file.</p>
 <p>In Mac/iOS, there’s a build in config file developed by Apple - <em>*.mobileconfig</em>, here is the description on <a href="fileinfo.com">fileinfo</a>.</p>
 <blockquote>
-<p>Configuration file created for iPhone and iPod touch devices; contains device setup information, such as password policies, access permissions, and proxy connection information, as well as VPN, email, and calendar settings; commonly used for deploying and registering Apple device configurations within enterprise networks.</p>
-</blockquote>
-<p>This kind of configuation file is commonly used in fast config of muti-devices. In addition, if you are providing some service you can also use this kind of file.</p>
-<p>Generally speaking, building such a file need an Apple developed software called <a href="https://itunes.apple.com/cn/app/apple-configurator/id434433123?mt=12" target="_blank" rel="external">Apple Configurator</a>, and you can enter your information into this software and than export a “.mobileconfig” file.</p>
-<p><img src="http://a4.mzstatic.com/us/r30/Purple3/v4/70/60/e3/7060e3cb-d14d-4e2e-8603-7d24fa47eb33/screen800x500.jpeg" alt="img"></p>
-<p>This is a good way, however, this is not a intellgent way. Because for most users, setting up VPN config is a little bit complex and time consuming. What they really need is a UI that only need you to enter their account name and their password. That would be perfect.</p>
-<p><img src="http://sfiles.qianduanmei.com/usr/uploads/2012/09/27/free-login-signin-signup-psd-043.jpg" alt="img"></p>
-<p>So you should do something behind this beautiful interface. You should know the structure of the .mobileconfig file, and figure out where to save the username ans where to save the password.So I figured it out. It is actually a XML file using DTD provided by apple. In this XML file, your configuration is saved.</p>
-<blockquote>
-<p>&lt;?xml version=\”1.0\” encoding=\”UTF-8\”?&gt;<br>&lt;!DOCTYPE plist PUBLIC \”-//Apple//DTD PLIST 1.0//EN\” \”<a href="http://www.apple.com/DTDs/PropertyList-1.0.dtd\&quot;&gt;" target="_blank" rel="external">http://www.apple.com/DTDs/PropertyList-1.0.dtd\&quot;&gt;</a> </p>
-</blockquote>
-<p>With all these information supported, it’s not hard for us to build a php file which receive the HTTP POST request from the front end and generate such a XML file on your server. This XML file contains the unique user info and your server info. If you want to change your server, just correct the XML and let users login to re-download the mobileconfig file. </p>
-<p>The last but not the least, you still need to sign your mobileconig file to make it safe and relible. To sign your config file, use this:</p>
-<blockquote>
-<p>openssl smime -sign -signer path/to/crt -inkey path/to/key -certfile path/to/ca-bundle -nodetach -outform der -in name.mobileconfig -out profile_signed.mobileconfig</p>
-</blockquote>
-<p>Everything will be alright then.</p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+<p>Configuration file created for iPhone and iPod touch devices; contains device setup information, such as password policies, access permissions, and proxy connection information, as well as VPN, email, and calendar settings; commonly used for deploying and registering Apple device configurations within enterprise networks.<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/09/02/mibileconfig/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1114,29 +1018,14 @@
 
       
         
-          
-            <p>有朋友说域名在国内容易有可能被HOLD，加上自己的域名马上就要到期了，因此痛下决心要把域名转到国外的服务商那里去。</p>
-<p>我的域名是在<a href="http://www.163ns.com/" target="_blank" rel="external">中国互联</a>购买的，废了半天劲找回了密码然后登入账户写ticket申请域名转出，在下周一就得到了回复，要求我联系qq客服。</p>
-<p>当然，域名要转出其实根本不用联系客服，只要你有域名授权密码就行。但是在中国互联的控制页面上死活也找不到密码。于是，只能继续联系客服。</p>
-<p>于是我转战qq，客服人员确认了我的身份之后，冷冷的问了一句：“为什么要转出呢”，顿时问的我有点晕，我是这样回答的：“希望挂到国外的提供商去。因为我希望申请国外的研究生。国外解析会可靠一点”。然后客服没有再回答我，直接给我转了另一个客服。另一个客服给我发来了一堆东西：</p>
-<blockquote>
-<p>域名转出： 域名所有者是个人的 ：<br>1.免责申明书 填好打印手写签字<br>2.转出表格填好 打印手写签字<br>3.身份证 正反面复印件 在上面签字<br>4.以上资料请邮寄至我司；</p>
-<p>域名所有者是公司的：<br>1.免责申请书 填好打印盖公司公章<br>2.转出表格填好 打印 盖公司公章<br>3.联系人身份证 正反面复印件 在上面签字<br>4.公司营业执照副本 复印件 在上面盖公司公章<br>5.以上资料请邮寄至我司；</p>
-<p>注：域名专员收到资料 审核没问题 会在7个工作日内给域名所有者邮箱发转出确认邮件 确认回复后 发转出密码 请注意查收邮件</p>
-</blockquote>
-<p>所以，没什么可说的了，既然人家这么要求了，就按照人家的要求一步一步的做，折腾完这一套文书之后，我就顺风给那边公司寄了过去。过了一两天顺风提示我快件被签收，又过了一天，客服发邮件告诉我，要求我用域名管理邮箱发域名转出确认信。于是我就用admin@domain.name又发了一封确认信。翌日，中国互联就把域名的密码发给我了。</p>
-<p>然后，我又跟我的域名接收方<a href="http://www.europeregistry.com/?currency=EUR" target="_blank" rel="external">Europe Registry</a>说我终于知道我域名的转出密码了，让他们赶快帮我转出。<br>ps1. 之所以选择这么个奇葩的域名接收方是因为我的域名比较小众，不像.com那样的那里都可以接受。<br>ps2. 域名转出貌似有规矩，刚注册几个月之内貌似不能转出，而且转出的同时必须续费。这个具体要咨询域名提供商。</p>
-<p>很快，Europe Registry那边就回复了，说我的域名密码正确，转出已经开始初始化。两星期之后，我发现域名依然没有成功转出，然后又给Europe Registry发工单问问什么情况了，然后Europe Registry那边回复告诉我说我的密码还不对，让我给他们发正确的密码。。。然后我就急了，就把2周前那个成功初始化的邮件又给他发了回去。</p>
-<blockquote>
-<p>Hi….<br>    I am really confused about the status of the domain <strong>domain.name</strong><br>    In the mail 【[#UFW-893-78144]: Re: Incorrect Domain Password for <strong>domain.name</strong>】,you told me that【The auth code was correct, and the domain transfer has been initiated.】that happened in Aug 14th.<br>    However, when I asked you about how is my transfer going yesterday, you answered me in this mail【[#XMR-810-35537]: Transfer about <strong>domain.name</strong>】that【Unfortunately the authorization code you have provided for the transfer of your domain is being rejected by the registry as incorrect.】<br>    Please tell me what is wrong with that? I paste my passcode again here.<br>    DOMAIN:<br>     Password:<br>    Target: Europe Registry</p>
-<pre><code>In addition I am sure this authorization code is correct.
-</code></pre><p>Thanks<br>By Jialin</p>
-</blockquote>
-<p>然后他回复跟我说，是他搞错了，实际上你的域名已经转出完成（我汗…），他会转告技术部门最后结束我域名的transfer. 过了一天，我接到邮件，说我域名转出完成。又过了一天，在Europe Registry的控制面板上就可以对域名进行各种操作了。</p>
-<p>总的来讲，这次转出大概用了一个月的时间，来来回回写申请，寄东西，发工单还有最后Europe Registry那边长时间的没反应耽误了好多时间。能转出成功还是要说这两边的客服还不错。转出了而且续期了，顿时有一种神清气爽的感觉。</p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+          <p>有朋友说域名在国内容易有可能被HOLD，加上自己的域名马上就要到期了，因此痛下决心要把域名转到国外的服务商那里去。</p>
+<p>我的域名是在<a href="http://www.163ns.com/">中国互联</a>购买的，废了半天劲找回了密码然后登入账户写ticket申请域名转出，在下周一就得到了回复，要求我联系qq客服。</p>
+<p>当然，域名要转出其实根本不用联系客服，只要你有域名授权密码就行。但是在中国互联的控制页面上死活也找不到密码。于是，只能继续联系客服。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/09/01/domain/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1248,15 +1137,12 @@
 
       
         
-          
-            <p>今天是6月17日，7月12日就要离开葡萄牙了。只有不到一个月的时间了。有时候甚至没有心情去旅游，只想静静的呆在朋友们的身边。<br>国内的好多朋友很久不见了。19号意平又要回台湾。佳佳那货每天就知道没心没肺的忙考试。感觉全世界都怪怪的。没有一个每天都陪你的人，就是会没有安全感。<br>回国要面对好多事，补考、重修、托福、GRE、课设、毕设、申请。感觉就要没有时间了。室友说，如果他没拿到奖学金，他就要休学去找工作，因为他没有足够的钱继续读下去了。相反我们有多幸福啊。。。<br>感觉，有的时候不要给自己太大压力，想想来到IST也是不错的。毕竟确实能学到好多东西。是一所不错的大学。你在这里，是不是已经熟识了很多人。知道了很多事。经历了很多寂寞，然而让你更熟悉了这个城市。相比北京的喧嚣，这里更多的是自由与没有打扰。这就是不同之处吧。但是谁知道，如果再回来，这个里斯本还是你认识的里斯本吗？<br>总有好多事，我不愿意去想，毕竟想也没用。因为根本不可能改变。。。分别是必须要经历的，不管是和这个城市分别，还是和这里的人分别。这样的场景完全不会回来了。这些人，永远凑不到一起了。就是这样。俗俗的说一句，天下没有不散的宴席，室友跟我说他离开印度的时候也是做着相同的心里准备的。不知道为什么，虽然是个“工程师”，有时候我就是接受不了这些事。<br>从albufeira回来之后就一直很烦乱。静不下心来，而且还一直都很疲劳。身体累，心更累，希望明天可以振作起来。好好看看OOP。后天考完，这里的学业也就结束了。<br>祝大家安好。</p>
-<blockquote>
-<p>Well you only need the light when it’s burning low<br>Only miss the sun when it starts to snow<br>Only know you love her when you let her go<br>Only know you’ve been high when you’re feeling low<br>Only hate the road when you’re missin’ home<br>Only know you love her when you let her go</p>
-<p>And you let her go</p>
-</blockquote>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+          <p>今天是6月17日，7月12日就要离开葡萄牙了。只有不到一个月的时间了。有时候甚至没有心情去旅游，只想静静的呆在朋友们的身边。<br>国内的好多朋友很久不见了。19号意平又要回台湾。佳佳那货每天就知道没心没肺的忙考试。感觉全世界都怪怪的。没有一个每天都陪你的人，就是会没有安全感。<br>回国要面对好多事，补考、重修、托福、GRE、课设、毕设、申请。感觉就要没有时间了。室友说，如果他没拿到奖学金，他就要休学去找工作，因为他没有足够的钱继续读下去了。相反我们有多幸福啊。。。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/06/17/2015-06-17/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1368,16 +1254,12 @@
 
       
         
-          
-            <p>#咖啡馆补餐<br>一天天过的真的好快，眼看着Cluster4打完了，4场异常全部结束。我们拖着疲惫的身躯和没电的手机在2号Po旁边的咖啡馆照了一张相。<br><img src="http://i.imgur.com/wKsLNk0.jpg" alt="Imgur"><br>此时我发现了我的iphone手机充电线断了。因此我的手机无法充电。一会还有游泳的活动和party。。。旁边一帮人都是用安卓的。这边周末所有商店根本不开。。眼看就要跪了。。这个时候Bruno跟我说他的车上有个转接头。因此我才安心的继续和他们一起呆着。</p>
-<p>#游泳池晒太阳<br>过了一会大概吃完了吧，（我们都没吃，老外也是靠吃面包过来的，幸亏早饭吃的多，我一直在等晚上party狂吃，因为他们聊天，我也没啥话说，就得吃吃吃）Bruno夫妇回车上准备回家，我跟着队长老婆和Nuno去游泳池，我没带游泳裤，只能在旁边无聊的看美女，喝藿香正气和晒太阳。。。<br>过了一会Bruno过来了，给我送来了安卓转iphone的转接口，又给手机冲上了电。。。又过了不大一会，队长过来了，他和Nuno一起开始游泳。。。我接着无聊。不过借到了队长的安卓线，我就开始给手机充电，然后回答王熠晨的奇怪问题。。等他们玩爽了，队长送我们回旅店。</p>
-<p>#After Party<br>回酒店自然是开音乐，洗澡，换身衣服～差不多到点了就出去和Nuno汇合，然后一会队长的车就过来接我们了。经过一段不短的行程，我们到了After Party的地方。开始所有人都没有进去，在外面聊天，看到了Nuno Cunha和他wife Layla,然后他们聊聊聊我也听不懂，之后估计在外面站累了，蓝军入场，然后绿军入场，然后我们找了个大桌子坐。。。我最后没地方坐到了桌子的一边。<br><img src="http://i.imgur.com/60ds4Rr.jpg" alt="Imgur"><br>他们说，坐在这边的人要请客，这是规矩（竟然如此嘲讽我。。。。）然后聊聊聊，有的时候看我太无聊了就用英语说两句，没事干的时候我就在一边吃吃吃。不过吃的东西味道真的很正。还是葡萄牙人会选地方，前菜是汤，超好喝！咸淡正好，虽然看起来跟食堂的差不多吧，但是味道说不出来有多好喝（原谅我吧，可能是我一天没吃东西的缘故），接下来主菜可以选土豆泥或者【奇怪的鸡肉香肠加土豆】，最后我选了后者，因为肉多，真是相当好吃啊！期间左边的大叔跟我讨论了蛋炒饭，说每一个中国餐厅都有类似的东西。。。叫做【chao chao rice…】我也是醉了，虽然没怎么明白他在说什么吧。。。但是。。。聊了两句。我的正左边是一个小哥，貌似是那个跟我聊炒米饭的大叔的儿子（或者孙子），他很腼腆基本不说话。。典型的工科生。。。马上master毕业了。住在法鲁，过两天去法鲁的时候也许可以约他打Po呢。。。过了一会Nuno Cunha又来调戏我，问我在干啥，我说在给成就Po充电。然互他就又开始跟我说我的成就是Layla申的，她还有Key呢＝＝。。【我受到了惊吓】，然后又在说我在科英布拉时做他的车打Po胆子小（废话。。。我肯定没事啊。。你开着车还打Po这车我哪敢坐啊，就差系安全带了。。），然后我又受到了大家的取笑。。。总之很开心。。<br>虽然没有吃的很爽吧（因为不是自助），但是毕竟食物很好吃。之后我被队长顺道送回了旅店，路上他和我吐槽他老婆其实是不玩ingress的。。但是为了怕他和其他女人。。。也就是为了查岗，这次特意和他一起过来。。。（其实Bruno也跟我说过类似的话，葡萄牙的女人好可怕）路上我们又聊了一些乱七八糟的话题，而且约了，明天让队长接我回家，到了旅馆，我也就洗洗睡了，之后队长应该又回去继续party了，不过12点多了。。。我就不嘬了。。。</p>
-<p>#Dawn<br>第二天同样早早的起来，上午抓紧时间刷Po。准备把所有的UPC和UPV都搞定，顺便做任务，不过这边的任务真的太坑了。。。我也就没怎么做。上午就是绕绕绕，至少把城区po最密的地方饶了一遍了吧，能占的都占了。任务貌似就做了2个，实在太虐了。。。然后就往回走，走到离旅馆比较近的教堂，看到一个蓝po，打打打！废了300多个8炸也没炸掉，不过得了30w的AP，也就半小时吧，还是很爽的，我一想快到12点了，还是回去checkout吧，然后就回去，收拾东西，在床上躺会，拿好所有东西，checkout，坐等队长。然后。。。。就没等来，一看快2点了。就一边刷po一边往火车站走。结果路上收到了队长的消息，然后我有往回走，最后在昨天绿军集合的地方我上车，他接我回里斯本。。在车上我已经很累了。差点睡着了。。。中间收费站休息一次，上了个厕所，先去Nuno家给他插脚，然后把我送到了Moscavide门口。。。我们下车，我从他包里取走了昨天的纪念品，然后回到了宿舍。</p>
-<p>#Twilight<br>回家，收拾collection，把海贼王补了，睡觉，第二天起床上学，准备还Bruno那个转换器，在civil吃了饭，到造币厂门口，开始hack，然后竟然聚了6个人，我把转换器给Bruno，结果他说不用了。。反正我也不用。。。诶。。。葡萄牙人真TM好。。。然后他们请我喝了cafe，我们又聊起了前天的事情，还历历在目，队长还跟另一个大叔说我前天守第四个Po的时候使劲插紫盾，结果插完就被打掉，插完就被打掉，因为VR的盾都用完了。。。大家都很开心。。。<br>我也终于写完了这次记录。。。但是呢。。。我还没有复习。。周一就这么水了哈哈哈哈哈哈哈。。</p>
-<p>#END<br><img src="http://i.imgur.com/9vBjs2O.jpg" alt="Imgur"></p>
-<p><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+          <h1 id="咖啡馆补餐"><a href="#咖啡馆补餐" class="headerlink" title="咖啡馆补餐"></a>咖啡馆补餐</h1><p>一天天过的真的好快，眼看着Cluster4打完了，4场异常全部结束。我们拖着疲惫的身躯和没电的手机在2号Po旁边的咖啡馆照了一张相。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/06/01/2015-06-01/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1489,41 +1371,13 @@
 
       
         
-          
-            <p>#Sun Rise<br>周六，一大早可能有点激动吧，8点多就爬起来，闹钟都没用上，洗澡，下楼吃美味的早餐自助。开始问队长+Filipe “Chycha”Azevedo啥时候集合，然后他说他也不知道。哈哈哈。等消息，最后说10：30，大概10点走出去，10分钟就到了集合地点。看到了队长。和副队长，葡萄牙绿军领袖Nuno Ferreira，热情的握手，打招呼。然后。。。他们一帮人开始聊。。。我就没啥聊的（听不懂葡语呀。。）在后面听着。最后估计是太阳越来越热了大家决定去旁边的咖啡馆坐会。他们做成一团，我依然在旁边绕。。。<br>过了一会，人越聚越多，然后Bruno Bruges Grade在Tg上问你们在哪里，给他发了个位置就出去接他。然后看到他和他Wife一起来，我们进去，他招呼我坐到了大家身边，我们坐了一大桌。感觉好舒服～虽然他们还是基本用葡语聊吧。。。不过。。。感觉就不一样了。。。</p>
-<p>#Enlightened<br>须臾，有消息说那边开始签到了，于是他们纷纷过去排队，我就留了下来等Bruno夫妇，等匆匆喝完咖啡之后，我们一起回到广场签到。实际上签到就是一袋子东西，里面有牌子，贴画，Res的卡，牌子的卡，然后就是买T恤，之后又排一队领胸牌。然后又是大家凑到一起聊天。等了一会大家东西都领完了就是啪啪啪使劲照相。然后，宣布队伍集结，开始干活。<br><img src="http://i.imgur.com/6JONyRq.jpg" alt="Img"></p>
-<p>#Cluster1<br>延小路直接走到目标Po。占领，起八，守。中途有些人去执行特别任务了，估计是去增援其他组了。我们这里经过一系列骚扰，稳稳地把2个Po保了下来。过了一会异常结束，出去的人也归队，我们去了另一个Cluster。</p>
-<blockquote>
-<p>###Persepolis: Covilhã - Measurement 1 Report<br>The Enlightened captured this Measurement, 107 to 83.<br>The Enlightened currently control this Satellite Site, leading by 24.</p>
-<p>Portals Owned - RES: 16 - ENL: 16 - [Value: 1 each]<br>Volatile Portals Owned - <strong>RES</strong>: 7 - ENL: 1 - [Value: 6 each]<br>Links Created - RES: 5 - <strong>ENL</strong>: 17 - [Value: 5 each]<br>Anchored Fields Created - RES: 0 - ENL: 0 - [Value: 10 each]<br>Single Field Over Entire Cluster - NONE - [Value: 75]<br>Total for this Measurement:<br>Resistance - 83 - <strong>Enlightened</strong> - 107<br>Total for this Satellite Site:<br>Resistance - 83 - <strong>Enlightened</strong> - 107</p>
-</blockquote>
-<p>#Cluster2<br>接下来，我们去第二个地点，依然是2个Po，我继续做deployer。我们人很多，虽然中间Bruno又消失了，但是把Po保护的稳稳地。期间明显有蓝军势力打得很厉害，不过Po一直都没有掉，而且基本都是recharge的节奏。<br><img src="http://i.imgur.com/gjKb5FY.jpg" alt="Imgur"><br>打完第二轮之后，我们知道了，我们第一轮赢了。大家都高兴的飞起～</p>
-<blockquote>
-<p>###Persepolis: Covilhã - Measurement 2 Report<br>The Resistance captured this Measurement, 138 to 39.<br>The Resistance currently control this Satellite Site, leading by 75.<br>Portals Owned - RES: 21 - ENL: 21 - [Value: 1 each]<br>Volatile Portals Owned - <strong>RES</strong>: 7 - ENL: 3 - [Value: 6 each]<br>Links Created - RES: 0 - ENL: 0 - [Value: 5 each]<br>Anchored Fields Created - RES: 0 - ENL: 0 - [Value: 10 each]<br>Single Field Over Entire Cluster - <strong>RES</strong> - [Value: 75]</p>
-<p>Total for this Measurement:<br><strong>Resistance</strong> - 138 - Enlightened - 39</p>
-<p>Total for this Satellite Site:<br><strong>Resistance</strong> - 221 - Enlightened - 146</p>
-</blockquote>
-<p>从上面的数据看，我们普通po拥有数量和蓝军一样，但是Volatile Portals少了好多，并且蓝军有个大Field一直罩着科维良，这个一直没打掉，输了很多。</p>
-<p>#Cluster3<br>接着开往第三轮，由于大家都没吃午饭，所以好多人在路上买了面包吃，但是一向拮据的我才不管那么多呢。顶多坐在旁边等等他们。<br>第三轮我们的目标Po好像是在科维良大学的旁边。主要靠我和DaddyPT合作，开始打，之后守，过程很激烈，守的很不容易，我记得最后好像是守住了。</p>
-<blockquote>
-<p>###Persepolis: Covilhã - Measurement 3 Report</p>
-<p>The Resistance captured this Measurement, 235 to 71.<br>The Resistance currently control this Satellite Site, leading by 239.</p>
-<p>Portals Owned - <strong>RES</strong>: 25 - ENL: 18 - [Value: 1 each]<br>Volatile Portals Owned - <strong>RES</strong>: 10 - ENL: 3 - [Value: 6 each]<br>Links Created - <strong>RES</strong>: 18 - ENL: 7 - [Value: 5 each]<br>Anchored Fields Created - <strong>RES</strong>: 6 - ENL: 0 - [Value: 10 each]<br>Single Field Over Entire Cluster - NONE - [Value: 75]</p>
-<p>Total for this Measurement:<br><strong>Resistance</strong> - 235 - Enlightened - 71</p>
-<p>Total for this Satellite Site:<br><strong>Resistance</strong> - 456 - Enlightened - 217</p>
-</blockquote>
-<p>在这之前好像那个大Field被打掉了，所以那个75分的增益没有了，但是蓝军明显在这一轮以绝对优势领先。没准是在外面做大Field的人回来了？</p>
-<p>#Cluster4<br>最后一轮，我们队好像管了3个Po，我和Bruno夫妇管第二个，开始占Po，起八都很正常。。。然后大家都累了，决定去旁边咖啡馆坐一会（此时我的手机已经快没电了，在科英布拉买的苹果线坏了）。刚刚坐下，服务员就过来问你们要点什么，我说我要咖啡。咖啡还没上，Bruno跟我说，3号Po需要支援，让我过去，我就匆匆喝完咖啡，结账，此时发现我们的Po被打掉了。因此还没来得及去3号Po。我们就开始返攻2号Po。我俩一起炸，最后炸掉了。开始deploy。炸的时候要在Po中心炸，插脚的时候要离开Po插。就这样：炸炸炸；或者插脚插Mod充电。花了不少东西。最后我们成功控制了那个Po</p>
-<blockquote>
-<p>###Persepolis: Covilhã - Measurement 4 Report</p>
-<p>The <strong>Enlightened</strong> captured this Measurement, 175 to 168.<br>The <strong>Resistance</strong> captured this Satellite Site, outperforming the Enlightened by 232.</p>
-<p>Portals Owned - <strong>RES</strong>: 22 - ENL: 20 - [Value: 1 each]<br>Volatile Portals Owned - <strong>RES</strong>: 6 - ENL: 5 - [Value: 6 each]<br>Links Created - RES: 14 - <strong>ENL</strong>: 17 - [Value: 5 each]<br>Anchored Fields Created - RES: 4 - ENL: 4 - [Value: 10 each]<br>Single Field Over Entire Cluster - NONE - [Value: 75]</p>
-<p>Total for this Measurement:<br>Resistance - 168 - <strong>Enlightened</strong> - 175</p>
-<p>Total for this Satellite Site:<br><strong>Resistance</strong> - 624 - Enlightened - 392</p>
-</blockquote>
-<p>这次绿军做的link比较多。控制了局面。但是由于第二轮第三轮的劣势，这次又仅仅是微弱优势，已经无法挽回了。所以总分还是输了。<br><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
-
-          
+          <h1 id="Sun-Rise"><a href="#Sun-Rise" class="headerlink" title="Sun Rise"></a>Sun Rise</h1><p>周六，一大早可能有点激动吧，8点多就爬起来，闹钟都没用上，洗澡，下楼吃美味的早餐自助。开始问队长+Filipe “Chycha”Azevedo啥时候集合，然后他说他也不知道。哈哈哈。等消息，最后说10：30，大概10点走出去，10分钟就到了集合地点。看到了队长。和副队长，葡萄牙绿军领袖Nuno Ferreira，热情的握手，打招呼。然后。。。他们一帮人开始聊。。。我就没啥聊的（听不懂葡语呀。。）在后面听着。最后估计是太阳越来越热了大家决定去旁边的咖啡馆坐会。他们做成一团，我依然在旁边绕。。。<br>过了一会，人越聚越多，然后Bruno Bruges Grade在Tg上问你们在哪里，给他发了个位置就出去接他。然后看到他和他Wife一起来，我们进去，他招呼我坐到了大家身边，我们坐了一大桌。感觉好舒服～虽然他们还是基本用葡语聊吧。。。不过。。。感觉就不一样了。。。</p>
+<h1 id="Enlightened"><a href="#Enlightened" class="headerlink" title="Enlightened"></a>Enlightened</h1><p>须臾，有消息说那边开始签到了，于是他们纷纷过去排队，我就留了下来等Bruno夫妇，等匆匆喝完咖啡之后，我们一起回到广场签到。实际上签到就是一袋子东西，里面有牌子，贴画，Res的卡，牌子的卡，然后就是买T恤，之后又排一队领胸牌。然后又是大家凑到一起聊天。等了一会大家东西都领完了就是啪啪啪使劲照相。然后，宣布队伍集结，开始干活。<br><img src="http://i.imgur.com/6JONyRq.jpg" alt="Img"><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/05/31/2015-05-31/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1624,7 +1478,7 @@
               <span class="links-of-author-item">
                 <a href="https://github.com/jialincater" target="_blank">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-github"></i> github
                   
                 </a>
               </span>
@@ -1632,7 +1486,7 @@
               <span class="links-of-author-item">
                 <a href="https://twitter.com/jialincater" target="_blank">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-twitter"></i> twitter
                   
                 </a>
               </span>
@@ -1640,7 +1494,7 @@
               <span class="links-of-author-item">
                 <a href="https://www.facebook.com/jialin.wang.14" target="_blank">
                   
-                    <i class="fa fa-globe"></i> facebook
+                    <i class="fa fa-facebook"></i> facebook
                   
                 </a>
               </span>
@@ -1708,7 +1562,8 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Cater</span>
+  <span class="author" itemprop="copyrightHolder">Cater</span>&nbsp;&nbsp;&nbsp;&nbsp;
+  |&nbsp;&nbsp;&nbsp;&nbsp;<span>京ICP备14019119号</span>&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 <div class="powered-by">

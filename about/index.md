@@ -33,4 +33,4 @@ date: 2016-03-22 19:16:33
 * TI University Program TIVA Cortex-M4 and High performance analog technology 
 * Distributed Monitor System Based on Wireless Sensor(Project leader)  National Project 
 
-未完待续<small>To be updated</small>
+在此可以索要文章的更多使用权限<small>Ask More privilege BELOW</small>

@@ -68,7 +68,7 @@
 由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。
 话说，在iOS MIDI界一定要提的就是Gene De Lisa大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
-<meta property="og:updated_time" content="2016-03-23T08:35:14.000Z">
+<meta property="og:updated_time" content="2016-03-23T13:45:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CoreMIDI小记">
 <meta name="twitter:description" content="做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。
@@ -200,45 +200,15 @@
             
               <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
             
-            ChatRoom
+            Chat room
           </a>
         </li>
       
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="st-search-show-outputs">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            
-          </a>
-        </li>
       
     </ul>
   
 
-  
-    <div class="site-search">
-      
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'QknWxx_aU5nRLCe2mwWH','2.0.0');
-</script>
-
-
-
-    </div>
   
 </nav>
 
@@ -339,7 +309,7 @@
       
         <p>做了MIDI半年多了，也该为这个库做点贡献了，毕竟这是一个少有人用的库，冷不丁一用还真有点难。和硬件交互没有啥简单的事，都是摸着石头过河。摸摸更健康。</p>
 <p>由于这篇文章是中文的，同时也免不了对一些英文博客的引用，因此引用会写在最后，用双语标出。</p>
-<p>话说，在iOS MIDI界一定要提的就是<a href="http://www.rockhoppertech.com/blog/" target="_blank" rel="external">Gene De Lisa</a>大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的，虽然总是没什么用，但是多少会给我一点启发。</p>
+<p>话说，在iOS MIDI界一定要提的就是<a href="http://www.rockhoppertech.com/blog/" target="_blank" rel="external">Gene De Lisa</a>大神，人家码出来的代码就是能用，虽然，有时候不太工整吧。在我的这段历程中，少不了参考这位大神的，虽然总是没什么用，但是多少会给我一点启发。<br><a id="more"></a></p>
 <h4 id="最简单的MIDI包发送实现"><a href="#最简单的MIDI包发送实现" class="headerlink" title="最简单的MIDI包发送实现"></a>最简单的MIDI包发送实现</h4><p>感觉对于初学者来讲，上苹果官网花半天看了一遍document，看完之后感觉比看之前还糊涂。其实先看看成品代码也没什么不好的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">MIDIClientRef client;</span><br><span class="line">MIDIPortRef outputPort;</span><br><span class="line">MIDIClientCreate(CFSTR(&quot;clientID&quot;), nil, nil, &amp;client);</span><br><span class="line">MIDIOutputPortCreate(client, CFSTR(&quot;PortID&quot;), &amp;outputPort);</span><br><span class="line"></span><br><span class="line">Byte packetListBuffer[777][256];</span><br><span class="line">MIDIPacketList* pktList = (MIDIPacketList*)packetListBuffer[0];</span><br><span class="line">Byte data[]  = &#123;p1, p2, p3&#125;;</span><br><span class="line">MIDIPacket *pkt = MIDIPacketListInit(pktList);</span><br><span class="line">pkt = MIDIPacketListAdd(pktListFirstRight, 256, pkt, 0, 3, data);</span><br><span class="line">ItemCount destinationCount = MIDIGetNumberOfDestinations();</span><br><span class="line">for (int i = 0; i &lt; destinationCount; i++) &#123;</span><br><span class="line">   MIDISend(outputPort, MIDIGetDestination(i), pktList);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>是不是So Easy? 执行完这段代码，你就可以给你的MIDI设备发一个指令了。代码中p1,p2,p3是MIDI包中的数据，规则详见<a href="https://www.midi.org/specifications/item/table-1-summary-of-midi-message" target="_blank" rel="external">MIDI标准</a>.<br>当然接收MIDI消息，也可以用类似的机制。另外，在发送的接收消息的时候，推荐使用多线程，因为在发送，接收的同时，你可能还会要求iOS系统播放，或者显示这些消息，一旦时间花销很大，可能会影响整个音乐的节奏。</p>
@@ -491,7 +461,7 @@
               <span class="links-of-author-item">
                 <a href="https://github.com/jialincater" target="_blank">
                   
-                    <i class="fa fa-globe"></i> github
+                    <i class="fa fa-github"></i> github
                   
                 </a>
               </span>
@@ -499,7 +469,7 @@
               <span class="links-of-author-item">
                 <a href="https://twitter.com/jialincater" target="_blank">
                   
-                    <i class="fa fa-globe"></i> twitter
+                    <i class="fa fa-twitter"></i> twitter
                   
                 </a>
               </span>
@@ -507,7 +477,7 @@
               <span class="links-of-author-item">
                 <a href="https://www.facebook.com/jialin.wang.14" target="_blank">
                   
-                    <i class="fa fa-globe"></i> facebook
+                    <i class="fa fa-facebook"></i> facebook
                   
                 </a>
               </span>
@@ -592,7 +562,8 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Cater</span>
+  <span class="author" itemprop="copyrightHolder">Cater</span>&nbsp;&nbsp;&nbsp;&nbsp;
+  |&nbsp;&nbsp;&nbsp;&nbsp;<span>京ICP备14019119号</span>&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
 <div class="powered-by">
