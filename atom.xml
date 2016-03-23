@@ -627,6 +627,34 @@
   
   <entry>
     <title>Feeling in my heart</title>
+    <link href="http://jialin.wang/2015/05/06/All%20about%20us/"/>
+    <id>http://jialin.wang/2015/05/06/All about us/</id>
+    <published>2015-05-06T13:51:00.000Z</published>
+    <updated>2016-03-23T08:35:01.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun within heart&lt;/p&gt;
+&lt;p&gt;Staring at the Mac’s screen&lt;br&gt;Talking about the future and sin&lt;br&gt;Lie down on bed toss and turn&lt;br&gt;having fun outof mind&lt;/p&gt;
+&lt;p&gt;’‘’&lt;br&gt;public static void main(String[] args) throws IAException {&lt;br&gt;        String[] s = new String[8];&lt;br&gt;        s[1]=”jialin”;s[3]=”pengcong”;s[5]=”Iping”;&lt;br&gt;        IterableArray&lt;string&gt; a = new IterableArray&lt;string&gt;(s);&lt;br&gt;        System.out.println(a);&lt;br&gt;        a.add(“Jianjian”);&lt;br&gt;        myIterator&lt;string&gt; its = new myIterator&lt;string&gt;(a);&lt;br&gt;        while(its.hasNext()){&lt;br&gt;            String pp = its.next();&lt;br&gt;            System.out.println(pp);&lt;br&gt;            its.remove();&lt;br&gt;        }&lt;br&gt;        a.add(“miao”);&lt;br&gt;        System.out.println(a);&lt;br&gt;    }&lt;br&gt;‘’‘&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;br&gt;本许可协议授权之外的使用权限可以从 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; rel=&quot;cc:morePermissions&quot;&gt;http://jialin.wang/about&lt;/a&gt; 处获得。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun 
+    
+    </summary>
+    
+      <category term="feeling" scheme="http://jialin.wang/categories/feeling/"/>
+    
+    
+      <category term="Portugal" scheme="http://jialin.wang/tags/Portugal/"/>
+    
+      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Feeling in my heart</title>
     <link href="http://jialin.wang/2015/05/06/Feeling%20in%20my%20heart/"/>
     <id>http://jialin.wang/2015/05/06/Feeling in my heart/</id>
     <published>2015-05-06T13:51:00.000Z</published>
@@ -662,34 +690,6 @@
     
     
       <category term="WTF" scheme="http://jialin.wang/tags/WTF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Feeling in my heart</title>
-    <link href="http://jialin.wang/2015/05/06/All%20about%20us/"/>
-    <id>http://jialin.wang/2015/05/06/All about us/</id>
-    <published>2015-05-06T13:51:00.000Z</published>
-    <updated>2016-03-23T08:35:01.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun within heart&lt;/p&gt;
-&lt;p&gt;Staring at the Mac’s screen&lt;br&gt;Talking about the future and sin&lt;br&gt;Lie down on bed toss and turn&lt;br&gt;having fun outof mind&lt;/p&gt;
-&lt;p&gt;’‘’&lt;br&gt;public static void main(String[] args) throws IAException {&lt;br&gt;        String[] s = new String[8];&lt;br&gt;        s[1]=”jialin”;s[3]=”pengcong”;s[5]=”Iping”;&lt;br&gt;        IterableArray&lt;string&gt; a = new IterableArray&lt;string&gt;(s);&lt;br&gt;        System.out.println(a);&lt;br&gt;        a.add(“Jianjian”);&lt;br&gt;        myIterator&lt;string&gt; its = new myIterator&lt;string&gt;(a);&lt;br&gt;        while(its.hasNext()){&lt;br&gt;            String pp = its.next();&lt;br&gt;            System.out.println(pp);&lt;br&gt;            its.remove();&lt;br&gt;        }&lt;br&gt;        a.add(“miao”);&lt;br&gt;        System.out.println(a);&lt;br&gt;    }&lt;br&gt;‘’‘&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/string&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;本篇文章&lt;/span&gt; 由 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Jialin&lt;/a&gt; 创作，采用 &lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议&lt;/a&gt;进行许可。&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;&lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;/a&gt;&lt;br&gt;本许可协议授权之外的使用权限可以从 &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://jialin.wang/about&quot; rel=&quot;cc:morePermissions&quot;&gt;http://jialin.wang/about&lt;/a&gt; 处获得。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Gazing at the &lt;strong&gt;EAST INDIA COMPANY&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;FINE BLACK LEAF TEA&lt;/strong&gt;&lt;br&gt;Get up with a ROYAL BREAKFAST&lt;br&gt;having fun 
-    
-    </summary>
-    
-      <category term="feeling" scheme="http://jialin.wang/categories/feeling/"/>
-    
-    
-      <category term="Portugal" scheme="http://jialin.wang/tags/Portugal/"/>
-    
-      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
     
   </entry>
   
