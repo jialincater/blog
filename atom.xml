@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jialin.wang/"/>
-  <updated>2016-03-24T13:29:32.000Z</updated>
+  <updated>2016-03-24T13:30:31.000Z</updated>
   <id>http://jialin.wang/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jialin.wang/2016/03/24/kloudsecGitHubEncrept/"/>
     <id>http://jialin.wang/2016/03/24/kloudsecGitHubEncrept/</id>
     <published>2016-03-24T12:57:00.000Z</published>
-    <updated>2016-03-24T13:29:32.000Z</updated>
+    <updated>2016-03-24T13:30:31.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;本文主要针对搭建在Github上的博客，借助Kloudsec平台，可以使在github上的博客使用由Let’s Encrypt Authority X1签发的证书。也就是说，在访问在github上搭建的博客时也可以使用https了~&lt;/p&gt;
 &lt;h3 id=&quot;啥是Let’s-Encrypt-搬运维基&quot;&gt;&lt;a href=&quot;#啥是Let’s-Encrypt-搬运维基&quot; class=&quot;headerlink&quot; title=&quot;啥是Let’s Encrypt?(搬运维基)&quot;&gt;&lt;/a&gt;啥是Let’s Encrypt?(搬运维基)&lt;/h3&gt;&lt;ul&gt;
@@ -103,11 +103,11 @@
       <category term="tech" scheme="http://jialin.wang/categories/tech/"/>
     
     
+      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
+    
       <category term="iOS" scheme="http://jialin.wang/tags/iOS/"/>
     
       <category term="Objective-C" scheme="http://jialin.wang/tags/Objective-C/"/>
-    
-      <category term="Programming" scheme="http://jialin.wang/tags/Programming/"/>
     
   </entry>
   
