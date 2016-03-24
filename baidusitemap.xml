@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
   <url>
     <loc>http://jialin.wang/2016/03/24/kloudsecGitHubEncrept/</loc>
     <lastmod>2016-03-24T13:30:31.000Z</lastmod>
@@ -318,11 +319,11 @@
         <title>CoreMIDI小记</title>
         <pubTime>2016-03-11T01:43:00.000Z</pubTime>
         
-        <tag>Programming </tag>
-         
         <tag>iOS </tag>
          
         <tag>Objective-C </tag>
+         
+        <tag>Programming </tag>
          
          
            
@@ -577,7 +578,6 @@
     </data>
     </url>
 
-    
     
     
     
