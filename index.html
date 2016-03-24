@@ -267,6 +267,152 @@ var _hmt = _hmt || [];
             
               
                 
+                <a class="post-title-link" href="/2016/03/24/kloudsecGitHubEncrept/" itemprop="url">
+                  Github Pages使用基于Let’s Encrypt的HTTPs安全链接
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-03-24T20:57:00+08:00" content="2016-03-24">
+              2016-03-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/24/kloudsecGitHubEncrept/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/03/24/kloudsecGitHubEncrept/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/24/kloudsecGitHubEncrept/" class="leancloud_visitors" data-flag-title="Github Pages使用基于Let’s Encrypt的HTTPs安全链接">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>本文主要针对搭建在Github上的博客，借助Kloudsec平台，可以使在github上的博客使用由Let’s Encrypt Authority X1签发的证书。也就是说，在访问在github上搭建的博客时也可以使用https了~</p>
+<h3 id="啥是Let’s-Encrypt-搬运维基"><a href="#啥是Let’s-Encrypt-搬运维基" class="headerlink" title="啥是Let’s Encrypt?(搬运维基)"></a>啥是Let’s Encrypt?(搬运维基)</h3><ul>
+<li>Let’s Encrypt 是一个将于2015年末推出的数字证书认证机构，将通过旨在消除当前手动创建和安装证书的复杂过程的自动化流程，为安全网站提供免费的SSL/TLS证书。</li>
+<li>Let’s Encrypt 是由互联网安全研究小组（ISRG，一个公益组织）提供的服务。主要赞助商包括电子前哨基金会，Mozilla基金会，Akamai以及思科。2015年4月9日，ISRG与Linux基金会宣布合作。</li>
+<li>用以实现这一新的数字证书认证机构的协议被称为自动证书管理环境（ACME）。GitHub上有这一规范的草案，且提案的一个版本已作为一个Internet草案发布。</li>
+<li>Let’s Encrypt 宣称这一过程将十分简单、自动化并且免费。<br>现在Let’s Encrypt已然进入public beta阶段（2016年3月），用户可以较自由的使用Let’s Encrypt签发证书。</li>
+</ul>
+<h3 id="使用Kloudsec之后有什么优劣"><a href="#使用Kloudsec之后有什么优劣" class="headerlink" title="使用Kloudsec之后有什么优劣"></a>使用Kloudsec之后有什么优劣</h3><h5 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h5><ol>
+<li>快，无需编码，免费！</li>
+<li>无痛地生成https链接</li>
+<li>不用进后台，不用开终端，做genkey之类的事情</li>
+<li>还有CDN的增值服务</li>
+</ol>
+<h5 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h5><ol>
+<li>可能会拖慢站点的访问速度（尤其在中国）</li>
+<li>还在测试中，服务稳定性有待测试</li>
+</ol>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li>进入<a href="https://kloudsec.com/github-pages" target="_blank" rel="external">Kloudsec</a></li>
+<li>注册（邮箱、密码）、配置Github页面、重写域名的A记录和TXT记录（这一步要去你的DNS服务商更改，如DNSPod）</li>
+<li>点击继续，稍等一会就好了。</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这玩意算是个神器吧，直接给网站加了https，他说他是基于Let’s Encrypt（加密后的链接确实是基于Let’s Encrypt的），但是博主无需跟Let’s Encrypt大邑点交道就可以完成https加密。有一点比较致命的缺点，就是你的域名直接指向了他给出的服务器，这貌似就相当你你添加了个你“信任”的中间人，中间人又为你做了CDN和HTTPs，这一步跳转增加了站点响应的时间，也增大了网站内容被篡改、监控的风险。<br><br><br><strong>文章内的尝试仅为技术分享，笔者不承担任何责任</strong><br><br><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">本篇文章</span> 由 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" property="cc:attributionName" rel="cc:attributionURL">Jialin</a> 创作，采用 <a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a>进行许可。<br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>本许可协议授权之外的使用权限可以从 <a xmlns:cc="http://creativecommons.org/ns#" href="http://jialin.wang/about" rel="cc:morePermissions">http://jialin.wang/about</a> 处获得。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/11/CoreMIDI/" itemprop="url">
                   CoreMIDI小记
                 </a>
@@ -1394,133 +1540,6 @@ var _hmt = _hmt || [];
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/31/2015-05-31/" itemprop="url">
-                  科维良——Battle Control
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-05-31T23:35:00+08:00" content="2015-05-31">
-              2015-05-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/story/" itemprop="url" rel="index">
-                    <span itemprop="name">story</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/31/2015-05-31/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/05/31/2015-05-31/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/05/31/2015-05-31/" class="leancloud_visitors" data-flag-title="科维良——Battle Control">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="Sun-Rise"><a href="#Sun-Rise" class="headerlink" title="Sun Rise"></a>Sun Rise</h1><p>周六，一大早可能有点激动吧，8点多就爬起来，闹钟都没用上，洗澡，下楼吃美味的早餐自助。开始问队长+Filipe “Chycha”Azevedo啥时候集合，然后他说他也不知道。哈哈哈。等消息，最后说10：30，大概10点走出去，10分钟就到了集合地点。看到了队长。和副队长，葡萄牙绿军领袖Nuno Ferreira，热情的握手，打招呼。然后。。。他们一帮人开始聊。。。我就没啥聊的（听不懂葡语呀。。）在后面听着。最后估计是太阳越来越热了大家决定去旁边的咖啡馆坐会。他们做成一团，我依然在旁边绕。。。<br>过了一会，人越聚越多，然后Bruno Bruges Grade在Tg上问你们在哪里，给他发了个位置就出去接他。然后看到他和他Wife一起来，我们进去，他招呼我坐到了大家身边，我们坐了一大桌。感觉好舒服～虽然他们还是基本用葡语聊吧。。。不过。。。感觉就不一样了。。。</p>
-<h1 id="Enlightened"><a href="#Enlightened" class="headerlink" title="Enlightened"></a>Enlightened</h1><p>须臾，有消息说那边开始签到了，于是他们纷纷过去排队，我就留了下来等Bruno夫妇，等匆匆喝完咖啡之后，我们一起回到广场签到。实际上签到就是一袋子东西，里面有牌子，贴画，Res的卡，牌子的卡，然后就是买T恤，之后又排一队领胸牌。然后又是大家凑到一起聊天。等了一会大家东西都领完了就是啪啪啪使劲照相。然后，宣布队伍集结，开始干活。<br><img src="http://i.imgur.com/6JONyRq.jpg" alt="Img"><br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/05/31/2015-05-31/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1566,7 +1585,7 @@ var _hmt = _hmt || [];
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1583,7 +1602,7 @@ var _hmt = _hmt || [];
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

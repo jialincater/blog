@@ -3,6 +3,30 @@
 
     
   <url>
+    <loc>http://jialin.wang/2016/03/24/kloudsecGitHubEncrept/</loc>
+    <lastmod>2016-03-24T13:26:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Github Pages使用基于Let’s Encrypt的HTTPs安全链接</title>
+        <pubTime>2016-03-24T12:57:00.000Z</pubTime>
+        
+        <tag>LetsEncrypt </tag>
+         
+        <tag>HTTPs </tag>
+         
+        <tag>Github </tag>
+         
+         
+           
+             
+              <breadCrumb title="tech" url="http://jialin.wang/categories/tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jialin.wang/2015/06/01/2015-06-01/</loc>
     <lastmod>2016-03-23T13:53:09.000Z</lastmod>
     <data>
@@ -294,11 +318,11 @@
         <title>CoreMIDI小记</title>
         <pubTime>2016-03-11T01:43:00.000Z</pubTime>
         
-        <tag>Programming </tag>
-         
         <tag>iOS </tag>
          
         <tag>Objective-C </tag>
+         
+        <tag>Programming </tag>
          
          
            
